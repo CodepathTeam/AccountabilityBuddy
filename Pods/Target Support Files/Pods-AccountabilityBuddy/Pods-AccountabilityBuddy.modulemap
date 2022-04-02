@@ -1,0 +1,6 @@
+framework module Pods_AccountabilityBuddy {
+  umbrella header "Pods-AccountabilityBuddy-umbrella.h"
+
+  export *
+  module * { export * }
+}
