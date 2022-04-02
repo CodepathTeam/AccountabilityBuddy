@@ -6,7 +6,7 @@
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes) 
 2. [Schema](#Schema)
-3. [Networking Requests](#Networking Requests)
+3. [Networking](#Networking)
 ## Overview
 ### Description
 It is hard starting something new, and finding someone who is going through the same journey could be hard. By connecting with people who are going through the same journey you can learn and keep each other accountable. We could also had real coaches who can teach the people in the journey the best way to progress. There could also be a social forum posting place for people to learn about different topics they want to work on.
@@ -86,7 +86,7 @@ barImage | File | Bar for each user, that increases every time the goal is uptat
 ### Digital Wireframes & Mockups
 <img src="https://i.postimg.cc/jqgyDszX/865a63a23f176f0cf311b9ee3d366bf6.png" height=200>
 
-## Networking Requests
+## Networking
 ### Network Requests Outline
 * Home Screen
 * (Read/GET) Query all goals where user is a buddy
