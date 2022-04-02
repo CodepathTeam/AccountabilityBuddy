@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0FI-yq-x1V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0FI-yq-x1V">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,10 +43,11 @@
             </objects>
             <point key="canvasLocation" x="2361" y="117"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="6Wo-OE-IfO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="luG-u3-CMd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="z7W-ob-e2j"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EBh-l5-Cme">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -76,10 +78,11 @@
             </objects>
             <point key="canvasLocation" x="2361" y="779"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="2iZ-sO-KDt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ejN-Ph-Xqf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="39x-wV-KbZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MGL-SZ-gdZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -110,10 +113,11 @@
             </objects>
             <point key="canvasLocation" x="2361" y="1446"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="T1A-Gj-wDh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eHN-xf-3Md" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="mVn-2T-WHc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wey-WP-iTs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -144,10 +148,11 @@
             </objects>
             <point key="canvasLocation" x="2361" y="2111"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="AMS-gF-Iv3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GyS-qg-UcV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2XX-sf-KCJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mVC-Tj-m7i">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -192,6 +197,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="UqR-4p-Q8f" kind="relationship" relationship="viewControllers" id="X5s-nd-mal"/>
+                        <segue destination="luG-u3-CMd" kind="relationship" relationship="viewControllers" id="JVi-y0-pAK"/>
+                        <segue destination="ejN-Ph-Xqf" kind="relationship" relationship="viewControllers" id="Uqe-st-6n1"/>
+                        <segue destination="eHN-xf-3Md" kind="relationship" relationship="viewControllers" id="3Ud-ho-ORl"/>
+                        <segue destination="GyS-qg-UcV" kind="relationship" relationship="viewControllers" id="vog-KF-XaC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgY-Ab-oI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
