@@ -161,11 +161,11 @@
             </objects>
             <point key="canvasLocation" x="4429" y="798"/>
         </scene>
-        <!--Item-->
+        <!--Goals-->
         <scene sceneID="2iZ-sO-KDt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ejN-Ph-Xqf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="39x-wV-KbZ"/>
+                    <tabBarItem key="tabBarItem" title="Goals" image="plus" catalog="system" id="39x-wV-KbZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MGL-SZ-gdZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -196,11 +196,11 @@
             </objects>
             <point key="canvasLocation" x="4429" y="1572"/>
         </scene>
-        <!--Item-->
+        <!--Forum-->
         <scene sceneID="T1A-Gj-wDh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eHN-xf-3Md" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mVn-2T-WHc"/>
+                    <tabBarItem key="tabBarItem" title="Forum" image="message" catalog="system" id="mVn-2T-WHc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wey-WP-iTs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -231,11 +231,11 @@
             </objects>
             <point key="canvasLocation" x="4429" y="2399"/>
         </scene>
-        <!--Item-->
+        <!--Setting-->
         <scene sceneID="AMS-gF-Iv3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GyS-qg-UcV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2XX-sf-KCJ"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="gearshape" catalog="system" id="2XX-sf-KCJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mVC-Tj-m7i">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -253,7 +253,7 @@
         <!--Profile-->
         <scene sceneID="mDo-PJ-hgY">
             <objects>
-                <viewController id="fxj-hb-uwT" customClass="FeedViewController" customModule="AccountabilityBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fxj-hb-uwT" customClass="ProfileViewController" customModule="AccountabilityBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TEJ-oV-Euc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,9 +311,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="message" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+      
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
