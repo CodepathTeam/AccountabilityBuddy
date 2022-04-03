@@ -19,8 +19,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Accountabilty Buddy" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-eX-WOX">
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <constraints>
+
                                     <constraint firstAttribute="height" constant="300" id="QcM-yy-1xD"/>
                                     <constraint firstAttribute="width" constant="300" id="k9w-N7-Xl0"/>
+
                                 </constraints>
                             </imageView>
                         </subviews>
