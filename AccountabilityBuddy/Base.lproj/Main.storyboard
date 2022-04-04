@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EQx-bW-mbA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EQx-bW-mbA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,45 +53,14 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jwj-jl-vXp">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" text="" id="VQc-OI-xFX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" id="hei-RI-GIc" customClass="SearchCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="54.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hei-RI-GIc" id="LPV-Wh-UUv">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="54.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="VQc-OI-xFX">
-                                                    <rect key="frame" x="66" y="2" width="340" height="50"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </searchBar>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-WU-mMi">
-                                                    <rect key="frame" x="8" y="3.5" width="50" height="47.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="7kX-HN-K2g"/>
-                                                        <constraint firstAttribute="width" constant="50" id="IXl-PY-CeD"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="aeH-WU-mMi" firstAttribute="leading" secondItem="LPV-Wh-UUv" secondAttribute="leading" constant="8" id="8Oq-4k-8dd"/>
-                                                <constraint firstItem="VQc-OI-xFX" firstAttribute="centerY" secondItem="aeH-WU-mMi" secondAttribute="centerY" id="GtT-M8-QZQ"/>
-                                                <constraint firstItem="VQc-OI-xFX" firstAttribute="leading" secondItem="aeH-WU-mMi" secondAttribute="trailing" constant="8" id="H0t-7x-Djj"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VQc-OI-xFX" secondAttribute="bottom" constant="2" id="ZFB-E1-BZF"/>
-                                                <constraint firstItem="aeH-WU-mMi" firstAttribute="top" secondItem="LPV-Wh-UUv" secondAttribute="top" constant="2" id="eET-ep-nUp"/>
-                                                <constraint firstAttribute="trailing" secondItem="VQc-OI-xFX" secondAttribute="trailing" constant="8" id="mI1-bj-hry"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aeH-WU-mMi" secondAttribute="bottom" constant="2" id="s8a-oK-9Ls"/>
-                                                <constraint firstItem="VQc-OI-xFX" firstAttribute="top" secondItem="LPV-Wh-UUv" secondAttribute="top" constant="2" id="wZW-ZS-21f"/>
-                                                <constraint firstItem="VQc-OI-xFX" firstAttribute="leading" secondItem="aeH-WU-mMi" secondAttribute="trailing" constant="8" id="xjh-oQ-KvV"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="searchBar" destination="VQc-OI-xFX" id="r8e-4v-Nze"/>
-                                            <outlet property="userProfilePicture" destination="aeH-WU-mMi" id="hoq-de-sJo"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectCell" rowHeight="76" id="tPZ-1b-deo" customClass="ConnectCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="82.5" width="414" height="76"/>
+                                        <rect key="frame" x="0.0" y="94.5" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tPZ-1b-deo" id="ufH-I4-xYj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>

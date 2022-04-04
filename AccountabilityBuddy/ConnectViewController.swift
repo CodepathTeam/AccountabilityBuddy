@@ -8,7 +8,7 @@
 import UIKit
 
 class ConnectViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+ 
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -23,7 +23,7 @@ class ConnectViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 51
+        return 50
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,17 +32,11 @@ class ConnectViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as! SearchCell
-            
-            return cell
-        }else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ConnectCell") as! ConnectCell
-            
-            cell.profileName.text = "John Doe"
-            
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ConnectCell") as! ConnectCell
+        
+        cell.profileName.text = "John Doe"
+        
+        return cell
         
         
     }
