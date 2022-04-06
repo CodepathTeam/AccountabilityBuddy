@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EQx-bW-mbA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0FI-yq-x1V">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20019"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,8 +16,85 @@
                     <view key="view" contentMode="scaleToFill" id="Xhe-aB-S2z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io5-Ft-uwS">
+                                <rect key="frame" x="70" y="247" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VFU-xh-HSl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmX-qp-rsP">
+                                <rect key="frame" x="70" y="332" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="iX4-Gk-fGJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-np-mhA">
+                                <rect key="frame" x="70" y="415" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="URq-oU-nKg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8V-gI-jKb">
+                                <rect key="frame" x="70" y="500" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3Eo-8N-lXB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="Accountabilty Buddy" translatesAutoresizingMaskIntoConstraints="NO" id="Jb1-AR-psn">
+                                <rect key="frame" x="21" y="111" width="373" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="GMn-hz-bjS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pd9-5Y-6ov">
+                                <rect key="frame" x="52" y="636" width="110" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-lp-bOv">
+                                <rect key="frame" x="271" y="636" width="84" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dre-Ag-ITj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jb1-AR-psn" firstAttribute="trailing" secondItem="Xhe-aB-S2z" secondAttribute="trailingMargin" id="2qU-I1-XYn"/>
+                            <constraint firstItem="dre-Ag-ITj" firstAttribute="trailing" secondItem="io5-Ft-uwS" secondAttribute="trailing" constant="44" id="6u2-31-d2W"/>
+                            <constraint firstItem="io5-Ft-uwS" firstAttribute="leading" secondItem="bmX-qp-rsP" secondAttribute="leading" id="7kP-CT-1Do"/>
+                            <constraint firstItem="h8V-gI-jKb" firstAttribute="top" secondItem="Gff-np-mhA" secondAttribute="bottom" constant="35" id="D2z-oO-O1j"/>
+                            <constraint firstItem="dre-Ag-ITj" firstAttribute="bottom" secondItem="pd9-5Y-6ov" secondAttribute="bottom" constant="182" id="FVG-Eu-Vq8"/>
+                            <constraint firstItem="oB7-lp-bOv" firstAttribute="baseline" secondItem="pd9-5Y-6ov" secondAttribute="baseline" id="JxX-aK-GAd"/>
+                            <constraint firstItem="pd9-5Y-6ov" firstAttribute="leading" secondItem="dre-Ag-ITj" secondAttribute="leading" constant="52" id="NmU-QC-NA5"/>
+                            <constraint firstItem="Gff-np-mhA" firstAttribute="trailing" secondItem="h8V-gI-jKb" secondAttribute="trailing" id="Nxs-9n-ogR"/>
+                            <constraint firstItem="dre-Ag-ITj" firstAttribute="trailing" secondItem="oB7-lp-bOv" secondAttribute="trailing" constant="59" id="RFK-Ff-MZc"/>
+                            <constraint firstItem="Jb1-AR-psn" firstAttribute="top" secondItem="dre-Ag-ITj" secondAttribute="top" constant="67" id="UTh-O2-Iks"/>
+                            <constraint firstItem="io5-Ft-uwS" firstAttribute="trailing" secondItem="bmX-qp-rsP" secondAttribute="trailing" id="ZAJ-cN-wgB"/>
+                            <constraint firstItem="bmX-qp-rsP" firstAttribute="top" secondItem="io5-Ft-uwS" secondAttribute="bottom" constant="35" id="ZDX-sh-824"/>
+                            <constraint firstItem="Jb1-AR-psn" firstAttribute="centerX" secondItem="Xhe-aB-S2z" secondAttribute="centerX" id="ZQb-0g-ynb"/>
+                            <constraint firstItem="bmX-qp-rsP" firstAttribute="trailing" secondItem="Gff-np-mhA" secondAttribute="trailing" id="eVq-Pp-aJ5"/>
+                            <constraint firstItem="Gff-np-mhA" firstAttribute="leading" secondItem="h8V-gI-jKb" secondAttribute="leading" id="gSI-Xf-yJS"/>
+                            <constraint firstItem="io5-Ft-uwS" firstAttribute="leading" secondItem="dre-Ag-ITj" secondAttribute="leading" constant="70" id="gWV-X9-6Ad"/>
+                            <constraint firstItem="Gff-np-mhA" firstAttribute="top" secondItem="bmX-qp-rsP" secondAttribute="bottom" constant="49" id="kNa-no-NYm"/>
+                            <constraint firstItem="io5-Ft-uwS" firstAttribute="top" secondItem="Jb1-AR-psn" secondAttribute="bottom" constant="53" id="oWo-vP-hrL"/>
+                            <constraint firstItem="bmX-qp-rsP" firstAttribute="leading" secondItem="Gff-np-mhA" secondAttribute="leading" id="zb9-xg-Tx9"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="EQx-bW-mbA" kind="presentation" id="Pji-FN-vYB"/>
@@ -24,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EvQ-p5-gdp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2312" y="779"/>
+            <point key="canvasLocation" x="-2314.4927536231885" y="778.79464285714278"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="93W-gg-P7I">
@@ -54,7 +132,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectCell" rowHeight="76" id="tPZ-1b-deo" customClass="ConnectCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="76"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tPZ-1b-deo" id="ufH-I4-xYj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
@@ -311,6 +389,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Accountabilty Buddy" width="500" height="500"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
