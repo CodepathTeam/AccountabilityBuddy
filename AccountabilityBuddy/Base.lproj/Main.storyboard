@@ -31,7 +31,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="iX4-Gk-fGJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-np-mhA">
@@ -48,7 +48,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="3Eo-8N-lXB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="Accountabilty Buddy" translatesAutoresizingMaskIntoConstraints="NO" id="Jb1-AR-psn">
@@ -63,6 +63,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSignUp:" destination="0FI-yq-x1V" eventType="touchUpInside" id="Ueg-ao-06a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-lp-bOv">
                                 <rect key="frame" x="271" y="636" width="84" height="44"/>
@@ -70,6 +73,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Login">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSignIn:" destination="0FI-yq-x1V" eventType="touchUpInside" id="wRR-r0-cAK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dre-Ag-ITj"/>
@@ -97,7 +103,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="EQx-bW-mbA" kind="presentation" id="Pji-FN-vYB"/>
+                        <outlet property="passwordField" destination="h8V-gI-jKb" id="nI0-eV-5j8"/>
+                        <outlet property="usernameField" destination="bmX-qp-rsP" id="pA6-Rj-gn5"/>
+                        <segue destination="EQx-bW-mbA" kind="presentation" identifier="loginSegue" id="Pji-FN-vYB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EvQ-p5-gdp" sceneMemberID="firstResponder"/>
