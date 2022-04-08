@@ -8,5 +8,6 @@ target 'AccountabilityBuddy' do
   # Pods for AccountabilityBuddy
   pod "AlamofireImage"
   pod "Parse"
+  pod 'CameraManager', '~> 5.1'
 
 end
