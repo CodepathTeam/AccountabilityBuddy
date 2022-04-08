@@ -6,16 +6,33 @@
 //
 
 import UIKit
+import CameraManager
 
-class EditProfileViewController: UIViewController {
-
+class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate {
+    
+    @IBOutlet weak var biographyTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onSaveButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func onCancelButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func onCameraButton(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

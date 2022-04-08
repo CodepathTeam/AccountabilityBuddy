@@ -336,14 +336,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="einstein-1" translatesAutoresizingMaskIntoConstraints="NO" id="dlV-c4-DuO" userLabel="Profile Picture">
-                                <rect key="frame" x="107" y="93" width="200" height="193"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dlV-c4-DuO" userLabel="Profile Picture">
+                                <rect key="frame" x="107" y="94.5" width="200" height="190"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="193" id="K6c-bK-c7m"/>
                                     <constraint firstAttribute="width" constant="200" id="eFE-fg-HE8"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albert Enstein" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbK-52-46x">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albert Einstein" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbK-52-46x">
                                 <rect key="frame" x="140" y="303" width="134" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -351,7 +352,7 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="3" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30U-CA-JYC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30U-CA-JYC">
                                 <rect key="frame" x="41" y="337" width="342" height="69"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -403,9 +404,11 @@
                             <constraint firstItem="47Q-Q9-2cA" firstAttribute="trailing" secondItem="dlV-c4-DuO" secondAttribute="trailing" constant="107" id="LM3-uv-6i3"/>
                             <constraint firstItem="dlV-c4-DuO" firstAttribute="leading" secondItem="47Q-Q9-2cA" secondAttribute="leading" constant="107" id="Nf9-8M-Vje"/>
                             <constraint firstItem="dLK-w1-mB0" firstAttribute="top" secondItem="BbK-52-46x" secondAttribute="bottom" constant="85" id="QXa-q9-nNH"/>
+                            <constraint firstItem="30U-CA-JYC" firstAttribute="top" secondItem="BbK-52-46x" secondAttribute="bottom" constant="8" symbolic="YES" id="Qwz-hK-pSP"/>
                             <constraint firstItem="dlV-c4-DuO" firstAttribute="top" secondItem="47Q-Q9-2cA" secondAttribute="top" constant="49" id="atk-NS-53G"/>
                             <constraint firstItem="47Q-Q9-2cA" firstAttribute="trailing" secondItem="30U-CA-JYC" secondAttribute="trailing" constant="31" id="buA-IQ-igW"/>
                             <constraint firstItem="BbK-52-46x" firstAttribute="top" secondItem="dlV-c4-DuO" secondAttribute="bottom" constant="17" id="cpc-BX-mXL"/>
+                            <constraint firstItem="dLK-w1-mB0" firstAttribute="top" secondItem="30U-CA-JYC" secondAttribute="bottom" constant="8" symbolic="YES" id="hyi-Pw-iUa"/>
                             <constraint firstItem="BbK-52-46x" firstAttribute="leading" secondItem="47Q-Q9-2cA" secondAttribute="leading" constant="140" id="lsf-c9-Luy"/>
                         </constraints>
                     </view>
@@ -430,34 +433,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-Sc-1du">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.stack.person.crop" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-Sc-1du">
                                 <rect key="frame" x="54" y="95" width="303" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="Uih-DW-8wO"/>
+                                    <constraint firstAttribute="height" constant="264.5" id="h3o-5b-owm"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8v7-DK-Pjq" appends="YES" id="d39-oS-enx"/>
+                                </connections>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type a bio" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hNR-TH-XyP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type a bio" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hNR-TH-XyP">
                                 <rect key="frame" x="20" y="413" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.80176974964790604" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="pSK-sC-4KF"/>
+                                    <constraint firstAttribute="height" constant="34" id="xex-nU-3v2"/>
+                                </constraints>
                                 <color key="textColor" red="0.30863998879999999" green="0.30863998879999999" blue="0.30863998879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqj-FC-Zws">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqj-FC-Zws">
                                 <rect key="frame" x="20" y="519" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.1757407896" green="0.1604930286" blue="0.19345386589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Save"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Save" cornerStyle="small">
+                                    <backgroundConfiguration key="background"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSaveButton:" destination="sXb-hr-5Ll" eventType="touchUpInside" id="Lvy-3a-Djm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogq-Og-yGV">
+                                <rect key="frame" x="20" y="558" width="374" height="61"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" cornerStyle="small">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Cancel">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onCancelButton:" destination="sXb-hr-5Ll" eventType="touchUpInside" id="wci-lG-ZBX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NDe-cc-450"/>
                         <color key="backgroundColor" red="0.13334843980743497" green="0.12177875729759835" blue="0.14678875210057399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XCq-Sc-1du" firstAttribute="leading" secondItem="NDe-cc-450" secondAttribute="leading" constant="54" id="0PL-NX-YKF"/>
+                            <constraint firstItem="ogq-Og-yGV" firstAttribute="top" secondItem="qqj-FC-Zws" secondAttribute="bottom" constant="8" symbolic="YES" id="1jJ-ua-1DV"/>
+                            <constraint firstItem="qqj-FC-Zws" firstAttribute="top" secondItem="hNR-TH-XyP" secondAttribute="bottom" constant="72" id="6aD-oV-QSp"/>
+                            <constraint firstItem="hNR-TH-XyP" firstAttribute="leading" secondItem="NDe-cc-450" secondAttribute="leading" constant="20" id="G9e-BO-fN9"/>
+                            <constraint firstItem="XCq-Sc-1du" firstAttribute="top" secondItem="NDe-cc-450" secondAttribute="top" constant="51.5" id="Q9y-QR-mYg"/>
+                            <constraint firstItem="qqj-FC-Zws" firstAttribute="leading" secondItem="NDe-cc-450" secondAttribute="leading" constant="20" id="QZH-ly-VFe"/>
+                            <constraint firstItem="NDe-cc-450" firstAttribute="trailing" secondItem="hNR-TH-XyP" secondAttribute="trailing" constant="20" id="RK5-78-jSH"/>
+                            <constraint firstItem="ogq-Og-yGV" firstAttribute="top" secondItem="qqj-FC-Zws" secondAttribute="bottom" constant="8" symbolic="YES" id="SJp-g9-kew"/>
+                            <constraint firstItem="NDe-cc-450" firstAttribute="bottom" secondItem="ogq-Og-yGV" secondAttribute="bottom" constant="243" id="Tqp-GD-ect"/>
+                            <constraint firstItem="ogq-Og-yGV" firstAttribute="leading" secondItem="NDe-cc-450" secondAttribute="leading" constant="20" id="U66-Jh-IyA"/>
+                            <constraint firstItem="qqj-FC-Zws" firstAttribute="top" secondItem="hNR-TH-XyP" secondAttribute="bottom" constant="72" id="UcT-I0-phT"/>
+                            <constraint firstItem="hNR-TH-XyP" firstAttribute="top" secondItem="XCq-Sc-1du" secondAttribute="bottom" constant="53" id="djU-D8-PlB"/>
+                            <constraint firstItem="NDe-cc-450" firstAttribute="trailing" secondItem="ogq-Og-yGV" secondAttribute="trailing" constant="20" id="eSJ-pe-ZIx"/>
+                            <constraint firstItem="hNR-TH-XyP" firstAttribute="top" secondItem="XCq-Sc-1du" secondAttribute="bottom" constant="53" id="eWU-8i-Pec"/>
+                            <constraint firstItem="NDe-cc-450" firstAttribute="trailing" secondItem="XCq-Sc-1du" secondAttribute="trailing" constant="57" id="fMx-fQ-Mya"/>
+                            <constraint firstItem="NDe-cc-450" firstAttribute="trailing" secondItem="qqj-FC-Zws" secondAttribute="trailing" constant="20" id="p7W-3H-iqq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="biographyTextField" destination="hNR-TH-XyP" id="wvm-sa-PTK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4i-Mn-EVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8v7-DK-Pjq">
+                    <connections>
+                        <action selector="onCameraButton:" destination="sXb-hr-5Ll" id="RAP-Jz-zf4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5328.985507246377" y="1040.625"/>
+            <point key="canvasLocation" x="5305.7971014492759" y="1018.5267857142857"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lmU-8R-qxg">
@@ -507,7 +569,6 @@
     </scenes>
     <resources>
         <image name="Accountabilty Buddy" width="500" height="500"/>
-        <image name="einstein-1" width="1259" height="1080"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
@@ -515,6 +576,7 @@
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="rectangle.stack.person.crop" catalog="system" width="128" height="122"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -523,6 +585,9 @@
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
