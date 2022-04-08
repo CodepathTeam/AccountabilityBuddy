@@ -22,13 +22,13 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var biographyLabel: UILabel!
     
     
-    //This function is to make the image round
+    //This function is to make the image round + round margin
     override func viewDidLoad() {
        super.viewDidLoad()
 
-       authorProfilePicture.layer.borderWidth = 1
+       authorProfilePicture.layer.borderWidth = 5
         authorProfilePicture.layer.masksToBounds = false
-        authorProfilePicture.layer.borderColor = UIColor.black.cgColor
+        authorProfilePicture.layer.borderColor = UIColor.white.cgColor
         authorProfilePicture.layer.cornerRadius = authorProfilePicture.frame.height/2
         authorProfilePicture.clipsToBounds = true
    }
