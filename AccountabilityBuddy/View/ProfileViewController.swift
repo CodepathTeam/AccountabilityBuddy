@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ProfileViewController: UIViewController {
 
@@ -13,8 +14,13 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
-    
+    struct ProfileHeader: View {
+        var body: some View {
+            ProfileHeader()
+        }
+    }
 
     /*
     // MARK: - Navigation
