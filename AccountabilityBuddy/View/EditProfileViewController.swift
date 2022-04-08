@@ -7,16 +7,17 @@
 
 import UIKit
 import CameraManager
+import AlamofireImage
 
-class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate {
+class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     @IBOutlet weak var biographyTextField: UITextField!
     
+    @IBOutlet weak var imageSelectorView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         
         
         // Do any additional setup after loading the view.
@@ -31,6 +32,29 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
     
     
     @IBAction func onCameraButton(_ sender: Any) {
+       let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            picker.sourceType = .camera
+        }else {
+            picker.sourceType = .photoLibrary
+        }
+        present(picker, animated: true, completion: nil)
+        
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+        imageSelectorView.layer.borderWidth = 1
+        imageSelectorView.layer.masksToBounds = false
+        imageSelectorView.layer.borderColor = UIColor.black.cgColor
+        imageSelectorView.layer.cornerRadius = imageSelectorView.frame.height/2
+        imageSelectorView.clipsToBounds = true
+        let size = CGSize(width: 300, height: 300)
+        let scaledImage = image.af_imageScaled(to: size)
+        
+        imageSelectorView.image = scaledImage
+        dismiss(animated: true, completion: nil)
     }
     
     /*
