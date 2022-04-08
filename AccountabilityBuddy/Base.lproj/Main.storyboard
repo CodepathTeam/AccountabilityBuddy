@@ -389,6 +389,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="sXb-hr-5Ll" kind="presentation" id="0D4-gI-jie"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="47Q-Q9-2cA"/>
@@ -418,6 +421,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pum-Vy-9Td" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4376.811594202899" y="1018.5267857142857"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="IRa-Gg-DaJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="sXb-hr-5Ll" customClass="EditProfileViewController" customModule="AccountabilityBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5rF-nM-dul">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NDe-cc-450"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4i-Mn-EVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5329" y="1041"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lmU-8R-qxg">
