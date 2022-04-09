@@ -25,6 +25,7 @@ The following **required** milestones/issues were completed:
 - [X] Connect page
 - [X] Settings page
 
+ https://camo.githubusercontent.com/b78f50ba856e427fd624d7685a0f9a4fbd0d9826e72c98cb725e4fa9d7f36510/68747470733a2f2f692e706f7374696d672e63632f6a71677944737a582f38363561363361323366313736663063663331316239656533643336366266362e706e67
 
 ## Sprint planned for next week (Issues created, assigned for Unit 8 Sprint 2 due 4/18/22) 
 
