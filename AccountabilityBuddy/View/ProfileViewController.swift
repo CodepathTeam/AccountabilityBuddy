@@ -9,11 +9,13 @@
 
 //import SwiftUI
 import UIKit
+import Parse
 //@available(iOS 15.0, *)
 @IBDesignable
 
 class ProfileViewController: UIViewController {
     
+   // var userImage = [PFObject]()
     
     @IBOutlet weak var authorProfilePicture: UIImageView!
     
