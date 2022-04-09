@@ -25,7 +25,7 @@ The following **required** milestones/issues were completed:
 - [X] Connect page
 - [X] Settings page
 
- <img src="https://i.postimg.cc/jqgyDszX/865a63a23f176f0cf311b9ee3d366bf6.png" height=200>
+ <img src="https://i.postimg.cc/jqgyDszX/865a63a23f176f0cf311b9ee3d366bf6.png" height=300>
 
 ## Sprint planned for next week (Issues created, assigned for Unit 8 Sprint 2 due 4/18/22) 
 
