@@ -29,10 +29,10 @@ The following **required** milestones/issues were completed:
 
 ## Sprint planned for next week (Issues created, assigned for Unit 8 Sprint 2 due 4/18/22) 
 
-User creates a goal and it's able to send it. (Assigned to Esse)
-There will be a forum to see good habits and health tips. (assigned to Yisake)
-Profile pages for each user.(Assigned to Maria) 
-Settings [Accesibility, Notification, General, etc.] (Assigned to Emmanuel)
+- User creates a goal and it's able to send it. (Assigned to Esse)
+- There will be a forum to see good habits and health tips. (assigned to Yisake)
+- Profile pages for each user.(Assigned to Maria) 
+- Settings [Accesibility, Notification, General, etc.] (Assigned to Emmanuel)
 
 
 
