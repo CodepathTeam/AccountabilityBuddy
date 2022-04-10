@@ -41,7 +41,7 @@ The following **required** milestones/issues were completed:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/DlGJEux.gif)
+![](http://g.recordit.co/GGNAPfc7wC.gif)
 
 
 
