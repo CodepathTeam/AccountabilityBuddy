@@ -25,7 +25,7 @@ The following **required** milestones/issues were completed:
 - [X] Connect page
 - [X] Settings page
 
- <img src="https://i.postimg.cc/DyMK42Vm/Imagen-de-i-OS.png" height=200>
+ <img src="https://i.postimg.cc/DyMK42Vm/Imagen-de-i-OS.png" height=400>
 
 ## Sprint planned for next week (Issues created, assigned for Unit 8 Sprint 2 due 4/18/22) 
 
