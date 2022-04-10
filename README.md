@@ -8,7 +8,7 @@ Sprint Plan in place using GitHub project management flow.
 - [X] GitHub Issues created from user stories (see below)
 - [X] Issues added to project and assigned to specific team members 
 - [X] Updated status of issues in Project board 
-- [] Sprint planned for next week (Issues created, assigned & added to project board) (see below partial )
+- [X] Sprint planned for next week (Issues created, assigned & added to project board) (see below partial )
 - [X] Completed user stories checked-off in README 
 - [X] Gifs created to show build progress and added to README (GIF walkthough below)
 
