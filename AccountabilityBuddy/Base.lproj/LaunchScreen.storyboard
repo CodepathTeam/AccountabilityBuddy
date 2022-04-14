@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,19 +16,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Accountabilty Buddy" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-eX-WOX">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lf-p9-pT8">
+                                <rect key="frame" x="-28" y="114" width="470" height="184"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="QcM-yy-1xD"/>
-                                    <constraint firstAttribute="width" constant="300" id="k9w-N7-Xl0"/>
+                                    <constraint firstAttribute="width" constant="470" id="8PM-Jp-xxb"/>
+                                    <constraint firstAttribute="height" constant="184" id="xvc-jt-7cJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Accountability">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="40" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="40" name="AppleColorEmoji"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Buddy">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="40" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ilustración_sin_título 1" translatesAutoresizingMaskIntoConstraints="NO" id="eum-so-SVR">
+                                <rect key="frame" x="-129" y="186" width="694" height="573"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="573" id="A2j-cO-cVu"/>
+                                    <constraint firstAttribute="width" constant="694" id="OrY-gO-7w5"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.87482875589999998" green="0.70470750329999998" blue="0.54113960270000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="XHq-eX-WOX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OMz-Su-H5J"/>
-                            <constraint firstItem="XHq-eX-WOX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xky-hN-1io"/>
+                            <constraint firstItem="8lf-p9-pT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="0En-cZ-vOe"/>
+                            <constraint firstItem="eum-so-SVR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-129" id="K7b-By-n65"/>
+                            <constraint firstAttribute="trailing" secondItem="eum-so-SVR" secondAttribute="trailing" constant="-151" id="UdH-uV-woF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eum-so-SVR" secondAttribute="bottom" constant="103" id="VPJ-A2-uM6"/>
+                            <constraint firstAttribute="trailing" secondItem="8lf-p9-pT8" secondAttribute="trailing" constant="-28" id="WJY-d5-Vcr"/>
+                            <constraint firstItem="eum-so-SVR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="aG1-rk-HzO"/>
+                            <constraint firstItem="8lf-p9-pT8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-28" id="aZP-FI-NQM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8lf-p9-pT8" secondAttribute="bottom" constant="564" id="tQj-2U-pTC"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,9 +77,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Accountabilty Buddy" width="500" height="500"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Ilustración_sin_título 1" width="1800" height="1200"/>
     </resources>
 </document>
