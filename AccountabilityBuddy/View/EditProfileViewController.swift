@@ -8,6 +8,7 @@
 import UIKit
 import CameraManager
 import AlamofireImage
+import Parse
 
 class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
@@ -24,6 +25,31 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
     }
     
     @IBAction func onSaveButton(_ sender: Any) {
+        
+      //  let userImage = PFObject(className: "userImage")
+      //  userImage["caption"] = biographyTextField.text!
+     //   userImage["author"] = PFUser.current()!
+        
+        
+      //  let imageData = imageSelectorView.image!.pngData()
+      //  let file = PFFileObject(name: "image.png", data: imageData!)
+   //
+      //  userImage["image"] = file
+        
+      //  userImage.saveInBackground{(success, error) in
+       //     if success {
+         //       self.dismiss(animated: true, completion: nil)
+                
+          //      print("saved!")
+         //   }else{
+               // print("error!")
+       //     }
+            
+            
+            
+    //    }
+        
+        
     }
     
     

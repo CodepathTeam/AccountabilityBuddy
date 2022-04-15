@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2BEB062807C052008E398B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2BEB052807C052008E398B /* Assets.xcassets */; };
 		2A7BE96A280030F200B8A110 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BE969280030F200B8A110 /* EditProfileViewController.swift */; };
 		6AA7D99D27F90FB400073D4A /* ConnectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7D99C27F90FB400073D4A /* ConnectCell.swift */; };
 		6ACEB83A27F8DB3D00791035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEB83927F8DB3D00791035 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		1C980CB1342E1DE4B01FFE6E /* Pods-AccountabilityBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountabilityBuddy.debug.xcconfig"; path = "Target Support Files/Pods-AccountabilityBuddy/Pods-AccountabilityBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		2A2BEB052807C052008E398B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7BE969280030F200B8A110 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		368BB45B0813EFA3BFA022BF /* Pods_AccountabilityBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccountabilityBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA7D99C27F90FB400073D4A /* ConnectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectCell.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				6ACEB85527F8DCF600791035 /* LoginViewController.swift */,
 				6ACEB83F27F8DB3D00791035 /* Main.storyboard */,
 				6ACEB84427F8DB3F00791035 /* LaunchScreen.storyboard */,
+				2A2BEB052807C052008E398B /* Assets.xcassets */,
 				6ACEB84727F8DB3F00791035 /* Info.plist */,
 				6ACEB85927F8E57D00791035 /* ConnectViewController.swift */,
 				6ACEB85C27F8E5D500791035 /* GoalsViewController.swift */,
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACEB84627F8DB3F00791035 /* LaunchScreen.storyboard in Resources */,
+				2A2BEB062807C052008E398B /* Assets.xcassets in Resources */,
 				6ACEB84127F8DB3D00791035 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UNGZHP2BF3;
 				INFOPLIST_FILE = AccountabilityBuddy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UNGZHP2BF3;
 				INFOPLIST_FILE = AccountabilityBuddy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
