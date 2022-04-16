@@ -45,7 +45,7 @@ Here's a walkthrough of implemented user stories:
 
 ## Video Walkthrough2
 
-![](http://g.recordit.co/vQkpp5Vwxv.gif)
+![](http://g.recordit.co/uk7fTAaRRp.gif)
 
 ## Video Walkthrough to add a goal by us
 
