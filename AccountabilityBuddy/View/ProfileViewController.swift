@@ -103,6 +103,7 @@ class ProfileViewController: UIViewController {
 
 
 
+@available(iOS 15.0, *)
 extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
