@@ -20,6 +20,8 @@
 		6ACEB86327F8E65E00791035 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEB86227F8E65E00791035 /* SettingsViewController.swift */; };
 		6ACEB86627F8FFB100791035 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEB86527F8FFB100791035 /* SignupViewController.swift */; };
 		6ACEB86927F9005F00791035 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEB86827F9005F00791035 /* ProfileViewController.swift */; };
+		6AFDAB90280B406D00AB3E3A /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDAB8E280B406C00AB3E3A /* GoalsViewController.swift */; };
+		6AFDAB91280B406E00AB3E3A /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDAB8F280B406D00AB3E3A /* GoalCell.swift */; };
 		7FB70ACE280A484200472FDF /* ForumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB70ACD280A484200472FDF /* ForumCell.swift */; };
 		7FB70AD0280A48D700472FDF /* ForumCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB70ACF280A48D700472FDF /* ForumCategoryCell.swift */; };
 		8024B851DD5540C38A5CFEAC /* Pods_AccountabilityBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368BB45B0813EFA3BFA022BF /* Pods_AccountabilityBuddy.framework */; };
@@ -43,6 +45,8 @@
 		6ACEB86227F8E65E00791035 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6ACEB86527F8FFB100791035 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		6ACEB86827F9005F00791035 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6AFDAB8E280B406C00AB3E3A /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalsViewController.swift; path = ../../../../Desktop/GoalsViewController.swift; sourceTree = "<group>"; };
+		6AFDAB8F280B406D00AB3E3A /* GoalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		7A836BE1807396B2D63498AD /* Pods-AccountabilityBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountabilityBuddy.release.xcconfig"; path = "Target Support Files/Pods-AccountabilityBuddy/Pods-AccountabilityBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		7FB70ACD280A484200472FDF /* ForumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCell.swift; sourceTree = "<group>"; };
 		7FB70ACF280A48D700472FDF /* ForumCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCategoryCell.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 		6ACEB83827F8DB3D00791035 /* AccountabilityBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				6AFDAB8F280B406D00AB3E3A /* GoalCell.swift */,
+				6AFDAB8E280B406C00AB3E3A /* GoalsViewController.swift */,
 				2AB579E027FFD2B0002C7E57 /* View */,
 				6ACEB83927F8DB3D00791035 /* AppDelegate.swift */,
 				6ACEB83B27F8DB3D00791035 /* SceneDelegate.swift */,
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACEB85627F8DCF600791035 /* LoginViewController.swift in Sources */,
+				6AFDAB90280B406D00AB3E3A /* GoalsViewController.swift in Sources */,
 				6ACEB83A27F8DB3D00791035 /* AppDelegate.swift in Sources */,
 				6ACEB86627F8FFB100791035 /* SignupViewController.swift in Sources */,
 				7FB70AD0280A48D700472FDF /* ForumCategoryCell.swift in Sources */,
@@ -251,6 +258,7 @@
 				6ACEB86927F9005F00791035 /* ProfileViewController.swift in Sources */,
 				6ACEB85A27F8E57D00791035 /* ConnectViewController.swift in Sources */,
 				6ACEB85D27F8E5D500791035 /* GoalsViewController.swift in Sources */,
+				6AFDAB91280B406E00AB3E3A /* GoalCell.swift in Sources */,
 				7FB70ACE280A484200472FDF /* ForumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
