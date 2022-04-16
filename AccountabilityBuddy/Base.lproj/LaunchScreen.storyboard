@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,23 +48,16 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ilustración_sin_título 1" translatesAutoresizingMaskIntoConstraints="NO" id="eum-so-SVR">
-                                <rect key="frame" x="-129" y="186" width="694" height="573"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="573" id="A2j-cO-cVu"/>
-                                    <constraint firstAttribute="width" constant="694" id="OrY-gO-7w5"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ilustración_sin_título 1-1" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-B0-Hzu">
+                                <rect key="frame" x="-88" y="276" width="611" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.87482875589999998" green="0.70470750329999998" blue="0.54113960270000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="8lf-p9-pT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="0En-cZ-vOe"/>
-                            <constraint firstItem="eum-so-SVR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-129" id="K7b-By-n65"/>
-                            <constraint firstAttribute="trailing" secondItem="eum-so-SVR" secondAttribute="trailing" constant="-151" id="UdH-uV-woF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eum-so-SVR" secondAttribute="bottom" constant="103" id="VPJ-A2-uM6"/>
                             <constraint firstAttribute="trailing" secondItem="8lf-p9-pT8" secondAttribute="trailing" constant="-28" id="WJY-d5-Vcr"/>
-                            <constraint firstItem="eum-so-SVR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="aG1-rk-HzO"/>
                             <constraint firstItem="8lf-p9-pT8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-28" id="aZP-FI-NQM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8lf-p9-pT8" secondAttribute="bottom" constant="564" id="tQj-2U-pTC"/>
                         </constraints>
@@ -77,6 +69,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Ilustración_sin_título 1" width="1800" height="1200"/>
+        <image name="Ilustración_sin_título 1-1" width="1800" height="1200"/>
     </resources>
 </document>
