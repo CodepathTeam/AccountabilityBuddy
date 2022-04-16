@@ -22,15 +22,27 @@ class ForumViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Do any additional setup after loading the view.
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 11
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ForumCell") as! ForumCell
         
-        return cell
+        if indexPath.row == 0{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ForumCategoryCell") as! ForumCategoryCell
+            
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ForumCell") as! ForumCell
+            
+            return cell
+        }
+        
         
     }
     

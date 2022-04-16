@@ -189,7 +189,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jwj-jl-vXp">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                                 <color key="backgroundColor" red="0.87482875589999998" green="0.70470750329999998" blue="0.54113960270000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="separatorColor" red="0.87482875589999998" green="0.70470750329999998" blue="0.54113960270000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.87384396789999996" green="0.70505535600000002" blue="0.53737205269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="0.87482875589999998" green="0.70470750329999998" blue="0.54113960270000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectCell" rowHeight="76" id="tPZ-1b-deo" customClass="ConnectCell" customModule="AccountabilityBuddy" customModuleProvider="target">
@@ -330,42 +330,46 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GbH-Cg-RFC">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.87384396789999996" green="0.70505535600000002" blue="0.53737205269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.87384396789999996" green="0.70505535600000002" blue="0.53737205269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.87384396789999996" green="0.70505535600000002" blue="0.53737205269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumCategoryCell" id="71a-FL-isH" customClass="ForumCategoryCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="20.666666030883789"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71a-FL-isH" id="354-8t-emd">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="20.666666030883789"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvS-4J-MtU" customClass="Cata">
-                                                    <rect key="frame" x="24" y="0.0" width="366" height="20.666666666666668"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="36" y="16" width="318" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="hvS-4J-MtU" secondAttribute="trailing" id="1N1-2R-CIb"/>
-                                                <constraint firstItem="hvS-4J-MtU" firstAttribute="top" secondItem="354-8t-emd" secondAttribute="top" id="M2w-We-TXp"/>
-                                                <constraint firstItem="hvS-4J-MtU" firstAttribute="leading" secondItem="354-8t-emd" secondAttribute="leading" constant="24" id="SMx-Fv-Ebw"/>
-                                                <constraint firstAttribute="bottom" secondItem="hvS-4J-MtU" secondAttribute="bottom" id="meG-cH-pxa"/>
+                                                <constraint firstAttribute="trailing" secondItem="hvS-4J-MtU" secondAttribute="trailing" constant="36" id="1N1-2R-CIb"/>
+                                                <constraint firstItem="hvS-4J-MtU" firstAttribute="top" secondItem="354-8t-emd" secondAttribute="top" constant="16" id="M2w-We-TXp"/>
+                                                <constraint firstItem="hvS-4J-MtU" firstAttribute="leading" secondItem="354-8t-emd" secondAttribute="leading" constant="36" id="SMx-Fv-Ebw"/>
+                                                <constraint firstAttribute="bottom" secondItem="hvS-4J-MtU" secondAttribute="bottom" constant="16" id="meG-cH-pxa"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.87384396789999996" green="0.70505535600000002" blue="0.53737205269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="forumCatagoryName" destination="hvS-4J-MtU" id="339-m3-0ao"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumCell" id="svm-h7-kBa" customClass="ForumCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="65.333332061767578" width="390" height="80"/>
+                                        <rect key="frame" x="0.0" y="108.66666603088379" width="390" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="svm-h7-kBa" id="QeV-b4-h5b">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsB-hi-HOr">
-                                                    <rect key="frame" x="16" y="4" width="358" height="72"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsB-hi-HOr">
+                                                    <rect key="frame" x="16" y="8" width="358" height="72"/>
+                                                    <color key="backgroundColor" red="0.61331759440335853" green="0.65554809855922025" blue="0.90624028444290161" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <string key="text">For sure, playing sports is a generally a fantastic way to improve your fitness and health. Many of us may not feel at home pounding away on a treadmill or working up a sweat in the gym, but we’ll happily chase a ball around endlessly while playing a game of some sort.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -373,12 +377,13 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="FsB-hi-HOr" firstAttribute="top" secondItem="QeV-b4-h5b" secondAttribute="top" constant="4" id="6GN-VE-3qJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="FsB-hi-HOr" secondAttribute="bottom" constant="4" id="HSY-rN-UMd"/>
+                                                <constraint firstItem="FsB-hi-HOr" firstAttribute="top" secondItem="QeV-b4-h5b" secondAttribute="top" constant="8" id="6GN-VE-3qJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="FsB-hi-HOr" secondAttribute="bottom" constant="8" id="HSY-rN-UMd"/>
                                                 <constraint firstAttribute="trailing" secondItem="FsB-hi-HOr" secondAttribute="trailing" constant="16" id="P2J-sd-WTJ"/>
                                                 <constraint firstItem="FsB-hi-HOr" firstAttribute="leading" secondItem="QeV-b4-h5b" secondAttribute="leading" constant="16" id="Pyr-pp-Vdl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.87384396789999996" green="0.70505535600000002" blue="0.53737205269999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="forumText" destination="FsB-hi-HOr" id="JZa-QM-Sqq"/>
                                         </connections>
@@ -413,7 +418,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="530-8E-BmA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.87384396789999996" green="0.70505535600000002" blue="0.53737205269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Forum" id="WAY-80-mEi"/>
                 </viewController>
