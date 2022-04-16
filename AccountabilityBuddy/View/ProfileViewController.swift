@@ -27,10 +27,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
     @IBOutlet weak var biographyLabel: UILabel!
     
     
-    @IBOutlet var tapEditProfilePicture: UITapGestureRecognizer!
-    
-    
-    
+    @IBOutlet weak var taptoEditbutton: UIButton!
     
     
     var imagePicker:UIImagePickerController!
@@ -39,17 +36,15 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
     
     
     
-    
-    
     //This function is to make the image round + round margin
     override func viewDidLoad() {
-       super.viewDidLoad()
+        super.viewDidLoad()
 
        authorProfilePicture.layer.borderWidth = 5
         authorProfilePicture.layer.masksToBounds = false
         authorProfilePicture.layer.borderColor = UIColor.white.cgColor
-        authorProfilePicture.layer.cornerRadius = authorProfilePicture.frame.height/2
-        authorProfilePicture.clipsToBounds = true
+       authorProfilePicture.layer.cornerRadius = authorProfilePicture.frame.height/2
+       authorProfilePicture.clipsToBounds = true
         
         
         
@@ -65,13 +60,16 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         authorProfilePicture.addGestureRecognizer(imageTap)
         authorProfilePicture.layer.cornerRadius = authorProfilePicture.bounds.height / 2
         authorProfilePicture.clipsToBounds = true
-        tapEditProfilePicture.addTarget(self, action: #selector(getter: authorProfilePicture))
+        taptoEditbutton.addTarget(self, action: #selector(self.openImagePicker),
+                                        for: .touchUpInside)
         
         
    }
     @objc func openImagePicker(_ sender:Any) {
            // Open Image Picker
         self.present(imagePicker, animated: true, completion: nil)
+        
+        
         
        }
 
