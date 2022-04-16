@@ -1,12 +1,11 @@
 
 # AccountabilityBuddy
 
-## Unit 7: Sprint Planning & Group Milestones
+## Unit 8: Sprint Planning & Group Milestones
 Sprint Plan in place using GitHub project management flow.
-- [X] GitHub Project created 
-- [X] GitHub Milestones created 
-- [X] GitHub Issues created from user stories (see below)
-- [X] Issues added to project and assigned to specific team members 
+- [X] Profile page created
+- [X] Forum page created
+- [X] User creates a goal and is assigned.
 - [X] Updated status of issues in Project board 
 - [X] Sprint planned for next week (Issues created, assigned & added to project board) (see below partial )
 - [X] Completed user stories checked-off in README 
@@ -21,30 +20,33 @@ The following **required** milestones/issues were completed:
 - [X] User sees app icon in home screen and styled launch screen. 
 - [X] User can sign up to create a new account. 
 - [X] User can log in. 
+- [X] User can create/add a goal. 
 - [X] A basic skeleton of our entire app.
 - [X] Connect page
 - [X] Settings page
 
  <img src="https://i.postimg.cc/DyMK42Vm/Imagen-de-i-OS.png" height=400>
 
-## Sprint planned for next week (Issues created, assigned for Unit 8 Sprint 2 due 4/18/22) 
+## Sprint planned for next week (Issues created, assigned for Unit 9 Sprint 3 due 4/23/22) 
 
-- User creates a goal and it's able to send it. (Assigned to Esse)
-- There will be a forum to see good habits and health tips. (assigned to Yisake)
-- Profile pages for each user.(Assigned to Maria) 
+- Update UX interface and standardize style. (Assigned to Maria)
+- Mock Schenarios and test run (assigned to Esse)
+- Builds for update/ delete / grouping of goals for each user.(Assigned to Yisake) 
 - Settings [Accesibility, Notification, General, etc.] (Assigned to Emmanuel)
 
 
 
 
-## Video Walkthrough
+## Video Walkthrough Login
 
 Here's a walkthrough of implemented user stories:
 
 ![](http://g.recordit.co/GGNAPfc7wC.gif)
 
+## Video Walkthrough2
 
+![](http://g.recordit.co/vQkpp5Vwxv.gif)
 
+## Video Walkthrough to add a goal by us
 
-
-
+![](https://i.imgur.com/mDF8nnA.gif)
