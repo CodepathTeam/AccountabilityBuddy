@@ -43,6 +43,10 @@ Here's a walkthrough of implemented user stories:
 
 ![](http://g.recordit.co/GGNAPfc7wC.gif)
 
+## Video Walkthrough2
+
+![](http://g.recordit.co/vQkpp5Vwxv.gif)
+
 
 
 
