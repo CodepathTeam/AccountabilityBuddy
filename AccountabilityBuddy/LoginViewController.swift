@@ -16,10 +16,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
     
     @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
@@ -48,7 +45,11 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
     /*
     // MARK: - Navigation
 

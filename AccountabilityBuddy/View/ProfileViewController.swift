@@ -58,7 +58,35 @@ class ProfileViewController: UIViewController {
         authorProfilePicture.layer.cornerRadius = authorProfilePicture.bounds.height / 2
         authorProfilePicture.clipsToBounds = true
         
-        //taptoEditbutton.addTarget(self, action: #selector(self.openImagePicker),for: .touchUpInside)
+        
+       
+        
+        
+        
+         
+        let query = PFQuery(className: "Contact")
+        query.getFirstObjectInBackground { object, error in
+           if error == nil{
+                if let contact = object {
+                
+                    let image:UIImage? = self.authorProfilePicture.image
+                    
+                    if image != nil{
+                        
+                        
+                        let imageData = image!.pngData()! as NSData
+                        let file = PFFileObject(name: "someimage.png", data: imageData as Data)
+                        contact["profilephoto"] = file
+                        contact.saveInBackground(block: {(result,error) -> Void in
+                            print("Done")
+                            
+                        })
+                    }
+                    }
+                }
+           }
+        
+        
         
         
    }
