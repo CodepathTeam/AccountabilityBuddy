@@ -25,7 +25,7 @@ The following **required** milestones/issues were completed:
 - [X] Connect page
 - [X] Settings page
 
- <img src=![Uploading 865a63a23f176f0cf311b9ee3d366bf6.png…]() height=400>
+ ![865a63a23f176f0cf311b9ee3d366bf6](https://user-images.githubusercontent.com/95549729/163667648-ededb5e1-6341-4d18-b839-9abbf87f88c4.png)
 
 ## Sprint planned for next week (Issues created, assigned for Unit 9 Sprint 3 due 4/23/22) 
 
