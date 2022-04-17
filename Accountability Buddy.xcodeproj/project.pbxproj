@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6ACEB83127F8DB3D00791035 /* Build configuration list for PBXProject "AccountabilityBuddy" */;
+			buildConfigurationList = 6ACEB83127F8DB3D00791035 /* Build configuration list for PBXProject "Accountability Buddy" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -442,7 +442,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6ACEB83127F8DB3D00791035 /* Build configuration list for PBXProject "AccountabilityBuddy" */ = {
+		6ACEB83127F8DB3D00791035 /* Build configuration list for PBXProject "Accountability Buddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6ACEB84827F8DB3F00791035 /* Debug */,

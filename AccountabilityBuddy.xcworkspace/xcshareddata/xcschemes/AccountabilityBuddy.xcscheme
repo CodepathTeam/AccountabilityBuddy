@@ -17,7 +17,7 @@
                BlueprintIdentifier = "6ACEB83527F8DB3D00791035"
                BuildableName = "AccountabilityBuddy.app"
                BlueprintName = "AccountabilityBuddy"
-               ReferencedContainer = "container:AccountabilityBuddy.xcodeproj">
+               ReferencedContainer = "container:Accountability Buddy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "6ACEB83527F8DB3D00791035"
             BuildableName = "AccountabilityBuddy.app"
             BlueprintName = "AccountabilityBuddy"
-            ReferencedContainer = "container:AccountabilityBuddy.xcodeproj">
+            ReferencedContainer = "container:Accountability Buddy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "6ACEB83527F8DB3D00791035"
             BuildableName = "AccountabilityBuddy.app"
             BlueprintName = "AccountabilityBuddy"
-            ReferencedContainer = "container:AccountabilityBuddy.xcodeproj">
+            ReferencedContainer = "container:Accountability Buddy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
