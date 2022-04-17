@@ -40,6 +40,10 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        assignbackground()
+        
+        
     
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
@@ -97,6 +101,23 @@ class ProfileViewController: UIViewController {
         
         
        }
+    
+    
+    func assignbackground(){
+            let background = UIImage(named: "background.png")
+
+            var imageView : UIImageView!
+            imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+            imageView.clipsToBounds = true
+            imageView.image = background
+            imageView.center = view.center
+            view.addSubview(imageView)
+            self.view.sendSubviewToBack(imageView)
+        }
+    
+    
+    
 }
 
 
@@ -123,5 +144,10 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         
         picker.dismiss(animated: true, completion: nil)
     }
+ 
+    
+  
+    
+    
     
 }

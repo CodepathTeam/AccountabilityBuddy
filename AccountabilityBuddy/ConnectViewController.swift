@@ -20,6 +20,31 @@ class ConnectViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.delegate = self
 
         // Do any additional setup after loading the view.
+        
+        
+        
+        
+        //please disregard this code, its just to assign a background
+        
+        assignbackground()
+        
+    }
+
+
+//please disregard this code, its just to assign a background
+
+func assignbackground(){
+        let background = UIImage(named: "background.png")
+
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+    imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
