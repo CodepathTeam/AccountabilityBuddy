@@ -2,7 +2,7 @@
 //  ProfileViewController.swift
 //  AccountabilityBuddy
 //
-//  Created by Isaac on 4/2/22.
+//  Created by Yanelys on 4/2/22.
 //
 
 
@@ -12,14 +12,15 @@ import UIKit
 import Parse
 import Foundation
 
+
 @available(iOS 15.0, *)
 @IBDesignable
 
 
 class ProfileViewController: UIViewController {
     
-    var userImage = [PFObject]()
-     
+   
+    
     
     @IBOutlet weak var authorProfilePicture: UIImageView!
     
@@ -27,19 +28,25 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var biographyLabel: UILabel!
     
-    
-    
+
     var imagePicker:UIImagePickerController!
     
     
+   
     
+    
+    
+    
+
     
     
     //This function is to make the image round + round margin+edit image
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         
         assignbackground()
         
@@ -62,42 +69,48 @@ class ProfileViewController: UIViewController {
         authorProfilePicture.layer.cornerRadius = authorProfilePicture.bounds.height / 2
         authorProfilePicture.clipsToBounds = true
         
-        
-       
-        
-        
+    
         
          
-        let query = PFQuery(className: "Contact")
-        query.getFirstObjectInBackground { object, error in
-           if error == nil{
-                if let contact = object {
+       // let query = PFQuery(className: "User")
+     //   query.getFirstObjectInBackground { object, error in
+     //      if error == nil{
+       //         if let userImage = object {
                 
-                    let image:UIImage? = self.authorProfilePicture.image
+          //          let image:UIImage? = self.authorProfilePicture.image
                     
-                    if image != nil{
+           //         if image != nil{
                         
-                        
-                        let imageData = image!.pngData()! as NSData
-                        let file = PFFileObject(name: "someimage.png", data: imageData as Data)
-                        contact["profilephoto"] = file
-                        contact.saveInBackground(block: {(result,error) -> Void in
-                            print("Done")
-                            
-                        })
-                    }
-                    }
-                }
-           }
+           //             let imageData = image!.pngData()! as NSData
+           //             let file = PFFileObject(name: "someimage.png", data: imageData as Data)
+           //             userImage["profilephoto"] = file
+           //             userImage.saveInBackground(block: {(result,error) -> Void in
+             //               print("Done")
+            //
+            //            })
+           //         }
+               //     }
+           //     }
+       //    }
         
         
         
         
    }
+    
+ 
+    
+  
+        
+
+    
+    
+    
+    
+    
     @objc func openImagePicker(_ sender:Any) {
            // Open Image Picker
         self.present(imagePicker, animated: true, completion: nil)
-        
         
         
        }
@@ -114,11 +127,18 @@ class ProfileViewController: UIViewController {
             imageView.center = view.center
             view.addSubview(imageView)
             self.view.sendSubviewToBack(imageView)
+        
+        
+       
         }
     
-    
+    func updateUI(user: User){
+        authorLabel.text = user.firstName
+        
+    }
     
 }
+
 
 
 
@@ -140,14 +160,43 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
             self.authorProfilePicture.image = pickedImage
             
             
+            
+            
+            
+            
         }
+
+
         
         picker.dismiss(animated: true, completion: nil)
-    }
+        
+    
+        
  
     
-  
-    
-    
-    
 }
+
+
+    @IBAction func saveButton(_ sender: AnyObject){
+        let object = PFObject(className: "User")
+        
+        let imageData = authorProfilePicture.image!.pngData()
+        let file = PFFileObject( name: "someimage.png", data: imageData!)
+        object["UserImage"] = file
+        
+        
+        object.saveInBackground{ (success, error) in
+            if success {
+                print("Saved")
+                self.dismiss(animated: true, completion: nil)
+            }else{
+                print("error")
+            }
+        
+        }
+        
+    }
+    
+
+}
+

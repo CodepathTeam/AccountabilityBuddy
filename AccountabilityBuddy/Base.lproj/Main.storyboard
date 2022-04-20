@@ -589,6 +589,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0u-WQ-pDD">
+                                <rect key="frame" x="237" y="44" width="137" height="31"/>
+                                <color key="tintColor" red="0.66389107400000003" green="0.68360043609999999" blue="0.69931253760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save Changes"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="fxj-hb-uwT" eventType="touchUpInside" id="4Cb-HB-pTP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="47Q-Q9-2cA"/>
                         <color key="backgroundColor" red="0.74073658850000001" green="0.88625648619999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -602,12 +611,15 @@
                             <constraint firstItem="dLK-w1-mB0" firstAttribute="top" secondItem="BbK-52-46x" secondAttribute="bottom" constant="85" id="QXa-q9-nNH"/>
                             <constraint firstItem="30U-CA-JYC" firstAttribute="top" secondItem="BbK-52-46x" secondAttribute="bottom" constant="8" symbolic="YES" id="Qwz-hK-pSP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dLK-w1-mB0" secondAttribute="trailing" constant="-40" id="WqI-1t-SH2"/>
+                            <constraint firstItem="K0u-WQ-pDD" firstAttribute="top" secondItem="47Q-Q9-2cA" secondAttribute="top" id="YVG-5Z-E4N"/>
                             <constraint firstItem="dlV-c4-DuO" firstAttribute="top" secondItem="47Q-Q9-2cA" secondAttribute="top" constant="49" id="atk-NS-53G"/>
                             <constraint firstItem="47Q-Q9-2cA" firstAttribute="trailing" secondItem="30U-CA-JYC" secondAttribute="trailing" constant="31" id="buA-IQ-igW"/>
                             <constraint firstItem="BbK-52-46x" firstAttribute="top" secondItem="dlV-c4-DuO" secondAttribute="bottom" constant="17" id="cpc-BX-mXL"/>
                             <constraint firstItem="dLK-w1-mB0" firstAttribute="leading" secondItem="TEJ-oV-Euc" secondAttribute="leading" id="dLf-Ae-bvn"/>
                             <constraint firstItem="dLK-w1-mB0" firstAttribute="top" secondItem="30U-CA-JYC" secondAttribute="bottom" constant="8" symbolic="YES" id="hyi-Pw-iUa"/>
                             <constraint firstItem="BbK-52-46x" firstAttribute="leading" secondItem="47Q-Q9-2cA" secondAttribute="leading" constant="140" id="lsf-c9-Luy"/>
+                            <constraint firstItem="K0u-WQ-pDD" firstAttribute="trailing" secondItem="TEJ-oV-Euc" secondAttribute="trailingMargin" id="pKH-WW-KF2"/>
+                            <constraint firstItem="K0u-WQ-pDD" firstAttribute="leading" secondItem="47Q-Q9-2cA" secondAttribute="leading" constant="237" id="sjP-SX-XZ0"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
