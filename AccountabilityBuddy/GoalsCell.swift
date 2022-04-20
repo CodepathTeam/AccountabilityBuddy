@@ -1,23 +1,19 @@
 //
-//  GoalCell.swift
+//  GoalsCell.swift
 //  AccountabilityBuddy
 //
-//  Created by E. Vi on 4/15/22.
+//  Created by G. Viho on 4/19/22.
 //
 
 import UIKit
-import Parse
 
-class GoalCell: UITableViewCell {
+class GoalsCell: UITableViewCell {
 
     
-   // @IBOutlet weak var goalTitleLabel: UILabel!
+    @IBOutlet weak var goalUserLabel: UILabel!
     
-   // @IBOutlet weak var currentUserLabel: UILabel!
+    @IBOutlet weak var myGoalDescriptLabel: UILabel!
     
-    //@IBOutlet weak var goalDescriptLabel: UILabel!
-    
-    @IBOutlet weak var goalTitleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
