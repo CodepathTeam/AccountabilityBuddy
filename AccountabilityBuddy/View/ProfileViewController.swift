@@ -13,6 +13,7 @@ import Parse
 import Foundation
 
 
+
 @available(iOS 15.0, *)
 @IBDesignable
 
@@ -178,6 +179,7 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
 
 
     @IBAction func saveButton(_ sender: AnyObject){
+        
         let object = PFObject(className: "User")
         
         let imageData = authorProfilePicture.image!.pngData()
