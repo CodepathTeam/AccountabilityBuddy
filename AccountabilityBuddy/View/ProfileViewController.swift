@@ -7,10 +7,11 @@
 
 
 
-//import SwiftUI
+
 import UIKit
 import Parse
 import Foundation
+import SwiftUI
 
 
 
@@ -18,7 +19,24 @@ import Foundation
 @IBDesignable
 
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "progressTableView") as! progressTableView
+        
+        
+        cell.youLabel.text = "You"
+        cell.friendLabel.text = "Friend"
+        cell.goalTitleField.text = "Goal"
+        
+        return cell
+    
+    }
+    
     
    
     
@@ -27,9 +45,12 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var authorLabel: UILabel!
     
-    @IBOutlet weak var biographyLabel: UILabel!
     
-
+    @IBOutlet weak var contactLabel: UILabel!
+    
+    @IBOutlet weak var progressTableView: UITableView!
+    
+    
     var imagePicker:UIImagePickerController!
     
     
@@ -47,8 +68,13 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        progressTableView.dataSource = self
+        progressTableView.delegate = self
         
         
+        
+        
+        //assign background
         assignbackground()
         
         
@@ -72,7 +98,7 @@ class ProfileViewController: UIViewController {
         
     
         
-         
+    
        // let query = PFQuery(className: "User")
      //   query.getFirstObjectInBackground { object, error in
      //      if error == nil{
@@ -99,14 +125,18 @@ class ProfileViewController: UIViewController {
         
    }
     
- 
     
-  
-        
+    
+    
+    
+    
+    
+    @IBAction func onGoToBar(_ sender: Any) {
+        let vc = UIHostingController(rootView: ProgressBar2SwiftUIView())
+        present(vc, animated: true)
+    }
+    
 
-    
-    
-    
     
     
     @objc func openImagePicker(_ sender:Any) {
@@ -133,11 +163,16 @@ class ProfileViewController: UIViewController {
        
         }
     
+    
+    //Can someone see any errors in my save button???
+    
     @IBAction func saveChangesButton(_ sender: AnyObject) {
 
         
-        let object = PFObject(className: "User")
         
+        
+        
+        let object = PFObject(className: "User")
         let imageData = authorProfilePicture.image!.pngData()
         let file = PFFileObject( name: "someimage.png", data: imageData!)
         object["UserImage"] = file
@@ -149,6 +184,8 @@ class ProfileViewController: UIViewController {
                 self.dismiss(animated: true, completion: nil)
             }else{
                 print("error")
+                
+                
             }
         
         }

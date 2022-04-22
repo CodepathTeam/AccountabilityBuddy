@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,8 +49,12 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ilustración_sin_título 1-2" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-B0-Hzu">
-                                <rect key="frame" x="16" y="300" width="382" height="572"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ilustración_sin_título 1-2" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-B0-Hzu">
+                                <rect key="frame" x="20" y="290" width="394" height="572"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="7QY-wC-IPL"/>
+                                    <constraint firstAttribute="height" constant="572" id="gYz-KX-CcW"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,12 +62,12 @@
                         <color key="tintColor" red="0.6877316201" green="1" blue="0.95892725940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="8lf-p9-pT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="0En-cZ-vOe"/>
+                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="246" id="Txe-Zk-WQY"/>
                             <constraint firstAttribute="trailing" secondItem="8lf-p9-pT8" secondAttribute="trailing" constant="-28" id="WJY-d5-Vcr"/>
-                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZE6-AZ-uaw"/>
                             <constraint firstItem="8lf-p9-pT8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-28" id="aZP-FI-NQM"/>
-                            <constraint firstAttribute="bottom" secondItem="eMm-B0-Hzu" secondAttribute="bottom" constant="24" id="kA2-PE-Oh3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eMm-B0-Hzu" secondAttribute="trailing" constant="16" id="o7w-um-zLd"/>
-                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="top" secondItem="8lf-p9-pT8" secondAttribute="bottom" constant="2" id="pXc-a9-zU0"/>
+                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hj6-Bt-1Vx"/>
+                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pnZ-PD-jCt"/>
+                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sgg-gB-0Vy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8lf-p9-pT8" secondAttribute="bottom" constant="564" id="tQj-2U-pTC"/>
                         </constraints>
                     </view>
@@ -74,6 +78,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Ilustración_sin_título 1-2" width="1800" height="1200"/>
+        <image name="Ilustración_sin_título 1-2" width="1800" height="1200"/>
     </resources>
 </document>
