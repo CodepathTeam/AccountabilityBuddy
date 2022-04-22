@@ -30,7 +30,7 @@ class SignupViewController: UIViewController {
         
         let user = PFUser()
         user.email = userEmailField.text
-        user.fullName = userFullNameField.text
+        user["fullName"] = userFullNameField.text
         user.username = usernameField.text
         user.password = passwordField.text
         
