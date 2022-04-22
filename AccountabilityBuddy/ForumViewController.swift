@@ -101,14 +101,26 @@ class ForumViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
 
-    /*
+/*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        //Finding the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let article = forums[indexPath.row]
+        
+        //Passing the selected movie to MovieDetail
+        let fullAtricle = segue.destination as! FullArticleViewController
+        fullAtricle.article = article
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
-    */
+ */
 
-}
+ }

@@ -20,6 +20,8 @@ class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         
+        self.tableView.reloadData()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,6 +39,8 @@ class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             }
         }
         
+        self.tableView.reloadData()
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,7 +53,7 @@ class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let mygoal = mygoals[indexPath.row]
         
         let myuser = mygoal["member"] as! PFUser
-        cell.goalUserLabel.text = myuser.username
+        cell.goalUserLabel.text = myuser["fullName"] as? String
         cell.myGoalDescriptLabel.text = mygoal["title"] as? String
         
         print ( mygoal["description"]! )

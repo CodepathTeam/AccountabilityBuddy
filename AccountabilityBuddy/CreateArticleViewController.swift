@@ -1,49 +1,25 @@
 //
-//  SignupViewController.swift
+//  createArticleViewController.swift
 //  AccountabilityBuddy
 //
-//  Created by Isaac on 4/2/22.
+//  Created by Isaac Tadele Beyene on 4/22/22.
 //
 
 import UIKit
 import Parse
 
-class SignupViewController: UIViewController {
-    
-    @IBOutlet weak var userEmailField: UITextField!
-    @IBOutlet weak var userFullNameField: UITextField!
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+class CreateArticleViewController: UIViewController {
     
     
-
+    @IBOutlet weak var articleSection: UITextField!
+    @IBOutlet weak var articleContent: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         assignbackground()
-
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func onSignUp(_ sender: Any) {
-        
-        let user = PFUser()
-        user.email = userEmailField.text
-        user["fullName"] = userFullNameField.text
-        user.username = usernameField.text
-        user.password = passwordField.text
-        
-        user.signUpInBackground { (success, error) in
-            if success {
-                self.dismiss(animated: true, completion: nil)
-                self.performSegue(withIdentifier: "signupSegue", sender: nil)
-            } else {
-                print ("Error: \(String(describing: error?.localizedDescription))")
-            }
-        }
-        
-    }
     
     func assignbackground(){
             let background = UIImage(named: "background.png")
@@ -57,6 +33,17 @@ class SignupViewController: UIViewController {
             view.addSubview(imageView)
             self.view.sendSubviewToBack(imageView)
         }
+    
+    
+    @IBAction func onCreateArticle(_ sender: Any) {
+        
+        let forum = PFObject(className: "Forum")
+        
+        forum["Title"] = articleSection.text
+        forum["Content"] = articleContent.text
+        
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
     /*

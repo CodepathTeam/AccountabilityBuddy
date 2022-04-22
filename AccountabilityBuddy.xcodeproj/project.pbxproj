@@ -24,6 +24,8 @@
 		6ACEB86627F8FFB100791035 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEB86527F8FFB100791035 /* SignupViewController.swift */; };
 		6ACEB86927F9005F00791035 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEB86827F9005F00791035 /* ProfileViewController.swift */; };
 		6AFDAB91280B406E00AB3E3A /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDAB8F280B406D00AB3E3A /* GoalCell.swift */; };
+		7F6D933928133ED2003092D2 /* CreateArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D933828133ED2003092D2 /* CreateArticleViewController.swift */; };
+		7F6D933B2813484F003092D2 /* FullArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D933A2813484F003092D2 /* FullArticleViewController.swift */; };
 		7FB70ACE280A484200472FDF /* ForumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB70ACD280A484200472FDF /* ForumCell.swift */; };
 		7FB70AD0280A48D700472FDF /* ForumCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB70ACF280A48D700472FDF /* ForumCategoryCell.swift */; };
 		8024B851DD5540C38A5CFEAC /* Pods_AccountabilityBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368BB45B0813EFA3BFA022BF /* Pods_AccountabilityBuddy.framework */; };
@@ -56,6 +58,8 @@
 		6ACEB86827F9005F00791035 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6AFDAB8F280B406D00AB3E3A /* GoalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		7A836BE1807396B2D63498AD /* Pods-AccountabilityBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountabilityBuddy.release.xcconfig"; path = "Target Support Files/Pods-AccountabilityBuddy/Pods-AccountabilityBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		7F6D933828133ED2003092D2 /* CreateArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateArticleViewController.swift; sourceTree = "<group>"; };
+		7F6D933A2813484F003092D2 /* FullArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullArticleViewController.swift; sourceTree = "<group>"; };
 		7FB70ACD280A484200472FDF /* ForumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCell.swift; sourceTree = "<group>"; };
 		7FB70ACF280A48D700472FDF /* ForumCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCategoryCell.swift; sourceTree = "<group>"; };
 		B690BECF280C9EAF007E1AC2 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				6ACEB83B27F8DB3D00791035 /* SceneDelegate.swift */,
 				6ACEB85527F8DCF600791035 /* LoginViewController.swift */,
 				6ACEB83F27F8DB3D00791035 /* Main.storyboard */,
+				7F6D933A2813484F003092D2 /* FullArticleViewController.swift */,
+				7F6D933828133ED2003092D2 /* CreateArticleViewController.swift */,
 				B690BED5280F4C14007E1AC2 /* GoalsCell.swift */,
 				B690BED3280F3B51007E1AC2 /* FeedGoalViewController.swift */,
 				B690BED1280CA524007E1AC2 /* AddGoalViewController.swift */,
@@ -280,6 +286,8 @@
 				6ACEB86927F9005F00791035 /* ProfileViewController.swift in Sources */,
 				6ACEB85A27F8E57D00791035 /* ConnectViewController.swift in Sources */,
 				B690BED2280CA524007E1AC2 /* AddGoalViewController.swift in Sources */,
+				7F6D933B2813484F003092D2 /* FullArticleViewController.swift in Sources */,
+				7F6D933928133ED2003092D2 /* CreateArticleViewController.swift in Sources */,
 				2AEA4B53281278CB006F78D1 /* ProgressBar2SwiftUIView.swift in Sources */,
 				6AFDAB91280B406E00AB3E3A /* GoalCell.swift in Sources */,
 				2AEA4B4D2812566E006F78D1 /* progressTableView.swift in Sources */,

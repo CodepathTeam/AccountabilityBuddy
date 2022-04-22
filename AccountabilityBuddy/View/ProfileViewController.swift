@@ -99,31 +99,51 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
         
     
-       // let query = PFQuery(className: "User")
-     //   query.getFirstObjectInBackground { object, error in
-     //      if error == nil{
-       //         if let userImage = object {
-                
-          //          let image:UIImage? = self.authorProfilePicture.image
-                    
-           //         if image != nil{
-                        
-           //             let imageData = image!.pngData()! as NSData
-           //             let file = PFFileObject(name: "someimage.png", data: imageData as Data)
-           //             userImage["profilephoto"] = file
-           //             userImage.saveInBackground(block: {(result,error) -> Void in
-             //               print("Done")
-            //
-            //            })
-           //         }
-               //     }
-           //     }
-       //    }
+
         
         
         
         
    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+         let query = PFQuery(className: "User")
+         query.getFirstObjectInBackground { object, error in
+            if error == nil{
+                 if let userImage = object {
+                 
+                     let image:UIImage? = self.authorProfilePicture.image
+                     
+                     if image != nil{
+                         
+                         let imageData = image!.pngData()! as NSData
+                         let file = PFFileObject(name: "someimage.png", data: imageData as Data)
+                         userImage["profilephoto"] = file
+                         userImage.saveInBackground(block: {(result,error) -> Void in
+                             print("Done")
+             
+                         })
+                     }
+                     }
+                 }
+            }
+        
+//        let query = PFQuery(className: "User")
+//        query.includeKey("objetId")
+//        query.limit = 20
+//
+//        query.findObjectsInBackground { (users, error) in
+//            if users != nil {
+//                self.users = users!
+//                self.tableView.reloadData()
+//
+//            }
+//        }
+        
+    }
     
     
     
