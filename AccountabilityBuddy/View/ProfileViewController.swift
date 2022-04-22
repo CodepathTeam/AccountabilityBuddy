@@ -18,7 +18,24 @@ import Foundation
 @IBDesignable
 
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "progressTableView") as! progressTableView
+        
+        
+        cell.youLabel.text = "You"
+        cell.friendLabel.text = "Friend"
+       
+        
+        return cell
+        
+    }
+    
     
    
     
@@ -28,6 +45,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var authorLabel: UILabel!
     
     @IBOutlet weak var biographyLabel: UILabel!
+    
+    @IBOutlet weak var contactLabel: UILabel!
+    
+    @IBOutlet weak var progressTableView: UITableView!
     
 
     var imagePicker:UIImagePickerController!
@@ -47,7 +68,8 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        progressTableView.dataSource = self
+        progressTableView.delegate = self
         
         assignbackground()
         

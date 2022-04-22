@@ -483,14 +483,14 @@
                                 <color key="sectionIndexBackgroundColor" red="0.75241130030000003" green="0.90118198240000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumCategoryCell" id="71a-FL-isH" customClass="ForumCategoryCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="64.333335876464844"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="63.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71a-FL-isH" id="354-8t-emd">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="64.333335876464844"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="63.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvS-4J-MtU" customClass="Cata">
-                                                    <rect key="frame" x="36" y="16.000000000000004" width="318" height="32.333333333333343"/>
+                                                    <rect key="frame" x="36" y="16" width="318" height="31.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -509,7 +509,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumCell" id="svm-h7-kBa" customClass="ForumCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="109.00000190734863" width="390" height="88"/>
+                                        <rect key="frame" x="0.0" y="108.33333396911621" width="390" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="svm-h7-kBa" id="QeV-b4-h5b">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
@@ -631,12 +631,12 @@
                                     <action selector="saveChangesButton:" destination="fxj-hb-uwT" eventType="touchUpInside" id="4q2-7J-bg9"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lzK-Up-XBO" customClass="progressTableView" customModule="AccountabilityBuddy" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lzK-Up-XBO">
                                 <rect key="frame" x="0.0" y="449" width="390" height="395"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="162" id="GtA-1g-iOR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="progressTableView" rowHeight="162" id="GtA-1g-iOR" customClass="progressTableView" customModule="AccountabilityBuddy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GtA-1g-iOR" id="iHl-Gw-g0g">
@@ -670,6 +670,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendLabel" destination="ky5-cd-RZt" id="C84-fu-o1P"/>
+                                            <outlet property="youLabel" destination="aqk-0K-VHB" id="5YV-Jg-shF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -689,9 +693,6 @@
                             <constraint firstItem="BbK-52-46x" firstAttribute="top" secondItem="dlV-c4-DuO" secondAttribute="bottom" constant="17" id="cpc-BX-mXL"/>
                             <constraint firstItem="BbK-52-46x" firstAttribute="leading" secondItem="47Q-Q9-2cA" secondAttribute="leading" constant="140" id="lsf-c9-Luy"/>
                         </constraints>
-                        <connections>
-                            <outlet property="progressTableView" destination="GtA-1g-iOR" id="G2q-od-gE8"/>
-                        </connections>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Profile" id="qLR-Yq-jeV"/>
@@ -700,6 +701,7 @@
                         <outlet property="authorLabel" destination="BbK-52-46x" id="EDa-u4-QyC"/>
                         <outlet property="authorProfilePicture" destination="dlV-c4-DuO" id="iMO-zH-9b4"/>
                         <outlet property="biographyLabel" destination="30U-CA-JYC" id="TIK-w0-ALj"/>
+                        <outlet property="progressTableView" destination="lzK-Up-XBO" id="cVT-h6-xPp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pum-Vy-9Td" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

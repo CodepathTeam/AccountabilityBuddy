@@ -7,10 +7,15 @@
 
 import UIKit
 
-class progressTableView: UITableView {
+
+
+
+class progressTableView: UITableViewCell {
 
     
-    @IBOutlet weak var progressTableView: UITableViewCell!
+    @IBOutlet weak var friendLabel: UILabel!
+    
+    @IBOutlet weak var youLabel: UILabel!
     
     
     /*
