@@ -304,13 +304,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnY-Zc-p66">
-                                                    <rect key="frame" x="193.66666666666663" y="8" width="188.33333333333337" height="159"/>
+                                                    <rect key="frame" x="171" y="8" width="211" height="159"/>
                                                     <attributedString key="attributedText">
-                                                        <fragment content="Wow Fantastic goal!">
+                                                        <fragment content="  Wow Fantastic goal!  ">
                                                             <attributes>
                                                                 <color key="NSBackgroundColor" red="0.75491904990830772" green="0.57629342517503601" blue="1" alpha="0.38747997157621067" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                 <font key="NSFont" size="23" name="GillSans"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -652,12 +653,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eM3-1w-uQ5">
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="eM3-1w-uQ5">
                                                     <rect key="frame" x="199" y="54" width="150" height="4"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="progressTintColor" systemColor="systemGreenColor"/>
                                                 </progressView>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d1o-JX-q8t">
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="d1o-JX-q8t">
                                                     <rect key="frame" x="199" y="132" width="150" height="4"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" systemColor="systemPurpleColor"/>
@@ -667,6 +668,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbC-JP-XVy">
+                                <rect key="frame" x="229" y="44" width="145" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save changes"/>
+                                <connections>
+                                    <action selector="saveChangesButton:" destination="fxj-hb-uwT" eventType="touchUpInside" id="4q2-7J-bg9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="47Q-Q9-2cA"/>
                         <color key="backgroundColor" red="0.75241130030000003" green="0.90118198240000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

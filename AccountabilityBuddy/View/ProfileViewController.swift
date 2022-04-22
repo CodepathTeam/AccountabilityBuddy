@@ -133,6 +133,27 @@ class ProfileViewController: UIViewController {
        
         }
     
+    @IBAction func saveChangesButton(_ sender: AnyObject) {
+
+        
+        let object = PFObject(className: "User")
+        
+        let imageData = authorProfilePicture.image!.pngData()
+        let file = PFFileObject( name: "someimage.png", data: imageData!)
+        object["UserImage"] = file
+        
+        
+        object.saveInBackground{ (success, error) in
+            if success {
+                print("Saved")
+                self.dismiss(animated: true, completion: nil)
+            }else{
+                print("error")
+            }
+        
+        }
+        
+    }
     
 }
 
@@ -173,27 +194,8 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
     
 }
 
+    
 
-    @IBAction func saveButton(_ sender: AnyObject){
-        
-        let object = PFObject(className: "User")
-        
-        let imageData = authorProfilePicture.image!.pngData()
-        let file = PFFileObject( name: "someimage.png", data: imageData!)
-        object["UserImage"] = file
-        
-        
-        object.saveInBackground{ (success, error) in
-            if success {
-                print("Saved")
-                self.dismiss(animated: true, completion: nil)
-            }else{
-                print("error")
-            }
-        
-        }
-        
-    }
     
 
 }
