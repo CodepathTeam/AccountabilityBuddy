@@ -46,6 +46,7 @@ class ForumViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
+    
     func createForumList(){
         
         forumList = []
