@@ -50,9 +50,9 @@ class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let myuser = mygoal["member"] as! PFUser
         cell.goalUserLabel.text = myuser.username
-        cell.myGoalDescriptLabel.text = mygoal["title"] as! String
+        cell.myGoalDescriptLabel.text = mygoal["title"] as? String
         
-       print ( mygoal["description"] )
+        print ( mygoal["description"]! )
         return cell
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0FI-yq-x1V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YkU-Hh-wye">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -442,14 +442,14 @@
                                 <color key="sectionIndexBackgroundColor" red="0.87384396789999996" green="0.70505535600000002" blue="0.53737205269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumCategoryCell" id="71a-FL-isH" customClass="ForumCategoryCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="64"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="63.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71a-FL-isH" id="354-8t-emd">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="63.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvS-4J-MtU" customClass="Cata">
-                                                    <rect key="frame" x="36" y="16" width="318" height="32"/>
+                                                    <rect key="frame" x="36" y="16" width="318" height="31.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -468,13 +468,13 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumCell" id="svm-h7-kBa" customClass="ForumCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="108.66666603088379" width="390" height="88"/>
+                                        <rect key="frame" x="0.0" y="108.33333396911621" width="390" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="svm-h7-kBa" id="QeV-b4-h5b">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsB-hi-HOr">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsB-hi-HOr">
                                                     <rect key="frame" x="16" y="8" width="358" height="72"/>
                                                     <color key="backgroundColor" red="0.61331759440335853" green="0.65554809855922025" blue="0.90624028444290161" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <string key="text">For sure, playing sports is a generally a fantastic way to improve your fitness and health. Many of us may not feel at home pounding away on a treadmill or working up a sweat in the gym, but we’ll happily chase a ball around endlessly while playing a game of some sort.</string>
