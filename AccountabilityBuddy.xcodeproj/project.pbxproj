@@ -11,6 +11,7 @@
 		2AEA4B4D2812566E006F78D1 /* progressTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA4B4C2812566E006F78D1 /* progressTableView.swift */; };
 		2AEA4B5128127473006F78D1 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA4B5028127473006F78D1 /* ProgressBarView.swift */; };
 		2AEA4B53281278CB006F78D1 /* ProgressBar2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA4B52281278CB006F78D1 /* ProgressBar2SwiftUIView.swift */; };
+		2AEA4B5528129EC0006F78D1 /* ContactsProfilePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA4B5428129EC0006F78D1 /* ContactsProfilePageView.swift */; };
 		6AA7D99D27F90FB400073D4A /* ConnectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7D99C27F90FB400073D4A /* ConnectCell.swift */; };
 		6ACEB83A27F8DB3D00791035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEB83927F8DB3D00791035 /* AppDelegate.swift */; };
 		6ACEB83C27F8DB3D00791035 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACEB83B27F8DB3D00791035 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		2AEA4B4C2812566E006F78D1 /* progressTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressTableView.swift; sourceTree = "<group>"; };
 		2AEA4B5028127473006F78D1 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		2AEA4B52281278CB006F78D1 /* ProgressBar2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar2SwiftUIView.swift; sourceTree = "<group>"; };
+		2AEA4B5428129EC0006F78D1 /* ContactsProfilePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsProfilePageView.swift; sourceTree = "<group>"; };
 		368BB45B0813EFA3BFA022BF /* Pods_AccountabilityBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccountabilityBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA7D99C27F90FB400073D4A /* ConnectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectCell.swift; sourceTree = "<group>"; };
 		6ACEB83627F8DB3D00791035 /* AccountabilityBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountabilityBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				2AEA4B4C2812566E006F78D1 /* progressTableView.swift */,
 				2AEA4B52281278CB006F78D1 /* ProgressBar2SwiftUIView.swift */,
 				2AEA4B5028127473006F78D1 /* ProgressBarView.swift */,
+				2AEA4B5428129EC0006F78D1 /* ContactsProfilePageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,8 +126,8 @@
 				B690BED5280F4C14007E1AC2 /* GoalsCell.swift */,
 				B690BED3280F3B51007E1AC2 /* FeedGoalViewController.swift */,
 				B690BED1280CA524007E1AC2 /* AddGoalViewController.swift */,
-				6ACEB85927F8E57D00791035 /* ConnectViewController.swift */,
 				B690BECF280C9EAF007E1AC2 /* GoalsViewController.swift */,
+				6ACEB85927F8E57D00791035 /* ConnectViewController.swift */,
 				7FB70ACF280A48D700472FDF /* ForumCategoryCell.swift */,
 				7FB70ACD280A484200472FDF /* ForumCell.swift */,
 				6ACEB84427F8DB3F00791035 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				2AEA4B5128127473006F78D1 /* ProgressBarView.swift in Sources */,
 				6ACEB85627F8DCF600791035 /* LoginViewController.swift in Sources */,
 				6ACEB83A27F8DB3D00791035 /* AppDelegate.swift in Sources */,
+				2AEA4B5528129EC0006F78D1 /* ContactsProfilePageView.swift in Sources */,
 				6ACEB86627F8FFB100791035 /* SignupViewController.swift in Sources */,
 				7FB70AD0280A48D700472FDF /* ForumCategoryCell.swift in Sources */,
 				6ACEB86327F8E65E00791035 /* SettingsViewController.swift in Sources */,

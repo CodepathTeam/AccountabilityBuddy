@@ -7,11 +7,16 @@
 
 import SwiftUI
 
+    
 struct ProgressBar2SwiftUIView: View {
+    
     @State var percent: CGFloat = 0
+
+    
+    
     var body: some View {
         VStack(spacing: 100){
-        Text("\(Int(percent)) days")
+            Text("\(Int(percent)) days")
                 .font(.system(size: 40, weight: .bold))
             ProgressBarView(width: 300, height: 20, percent: percent, color1: Color(#colorLiteral(red: 0, green: 1, blue: 0, alpha: 1)), color2: Color(#colorLiteral(red:0 , green: 5, blue: 1, alpha: 1)))
 
@@ -48,3 +53,5 @@ struct ProgressBar2SwiftUIView_Previews: PreviewProvider {
         ProgressBar2SwiftUIView()
     }
 }
+
+

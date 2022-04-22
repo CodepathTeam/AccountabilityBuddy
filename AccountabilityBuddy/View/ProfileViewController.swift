@@ -31,13 +31,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
         cell.youLabel.text = "You"
         cell.friendLabel.text = "Friend"
-        
-        
-        
-       
+        cell.goalTitleField.text = "Goal"
         
         return cell
-        
+    
     }
     
     
@@ -53,8 +50,6 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var progressTableView: UITableView!
     
-    
-   
     
     var imagePicker:UIImagePickerController!
     
@@ -76,6 +71,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         progressTableView.dataSource = self
         progressTableView.delegate = self
         
+        
+        
+        
+        //assign background
         assignbackground()
         
         
@@ -99,7 +98,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
     
         
-         
+    
        // let query = PFQuery(className: "User")
      //   query.getFirstObjectInBackground { object, error in
      //      if error == nil{
@@ -125,6 +124,11 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
         
    }
+    
+    
+    
+    
+    
     
     
     @IBAction func onGoToBar(_ sender: Any) {
@@ -165,8 +169,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func saveChangesButton(_ sender: AnyObject) {
 
         
-        let object = PFObject(className: "User")
         
+        
+        
+        let object = PFObject(className: "User")
         let imageData = authorProfilePicture.image!.pngData()
         let file = PFFileObject( name: "someimage.png", data: imageData!)
         object["UserImage"] = file
@@ -178,6 +184,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
                 self.dismiss(animated: true, completion: nil)
             }else{
                 print("error")
+                
+                
             }
         
         }

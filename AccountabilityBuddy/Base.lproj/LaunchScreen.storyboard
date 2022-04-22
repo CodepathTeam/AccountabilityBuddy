@@ -49,22 +49,26 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ilustración_sin_título 1-2" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-B0-Hzu">
-                                <rect key="frame" x="20" y="276" width="394" height="572"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ilustración_sin_título 1-2" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-B0-Hzu">
+                                <rect key="frame" x="20" y="290" width="394" height="572"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="7QY-wC-IPL"/>
+                                    <constraint firstAttribute="height" constant="572" id="gYz-KX-CcW"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.74073658850000001" green="0.88625648619999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.6877316201" green="1" blue="0.95892725940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="232" id="09U-9E-mXJ"/>
                             <constraint firstItem="8lf-p9-pT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="0En-cZ-vOe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eMm-B0-Hzu" secondAttribute="bottom" constant="14" id="VB5-Gx-H1b"/>
+                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="246" id="Txe-Zk-WQY"/>
                             <constraint firstAttribute="trailing" secondItem="8lf-p9-pT8" secondAttribute="trailing" constant="-28" id="WJY-d5-Vcr"/>
                             <constraint firstItem="8lf-p9-pT8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-28" id="aZP-FI-NQM"/>
-                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="10" id="ssJ-3P-8cO"/>
+                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hj6-Bt-1Vx"/>
+                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pnZ-PD-jCt"/>
+                            <constraint firstItem="eMm-B0-Hzu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sgg-gB-0Vy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8lf-p9-pT8" secondAttribute="bottom" constant="564" id="tQj-2U-pTC"/>
-                            <constraint firstAttribute="trailing" secondItem="eMm-B0-Hzu" secondAttribute="trailing" constant="10" id="w0D-1Q-VKa"/>
                         </constraints>
                     </view>
                 </viewController>
