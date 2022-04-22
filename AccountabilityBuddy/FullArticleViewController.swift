@@ -11,6 +11,10 @@ import Parse
 class FullArticleViewController: UIViewController {
     
     var article: [String:Any]!
+    
+    @IBOutlet weak var articleTitle: UILabel!
+    @IBOutlet weak var articleContent: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

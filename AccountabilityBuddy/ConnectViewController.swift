@@ -32,12 +32,17 @@ class ConnectViewController: UIViewController, UITableViewDataSource, UITableVie
         query.includeKey("objetId")
         query.limit = 20
         
+        
+        
         query.findObjectsInBackground { (users, error) in
             if users != nil {
                 self.users = users!
                 self.tableView.reloadData()
                 
             }
+            
+            print("The number of users is \(String(describing: users?.count))")
+                   
         }
     }
     
@@ -49,7 +54,7 @@ class ConnectViewController: UIViewController, UITableViewDataSource, UITableVie
         
         
         print("the method is running")
-        print("\(users)")
+//        print("\(users)")
         let cell = tableView.dequeueReusableCell(withIdentifier: "ConnectCell") as! ConnectCell
         
         print(users[indexPath.row]["objectId"] as? String)

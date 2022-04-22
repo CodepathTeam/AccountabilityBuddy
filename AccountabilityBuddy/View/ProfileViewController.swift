@@ -12,6 +12,7 @@ import UIKit
 import Parse
 import Foundation
 import SwiftUI
+import AlamofireImage
 
 
 
@@ -20,6 +21,99 @@ import SwiftUI
 
 
 class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var authorProfilePicture: UIImageView!
+    
+    @IBOutlet weak var authorLabel: UILabel!
+    
+    @IBOutlet weak var contactLabel: UILabel!
+    
+    @IBOutlet weak var progressTableView: UITableView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+                
+        progressTableView.dataSource = self
+        progressTableView.delegate = self
+        
+        //assign background
+        assignbackground()
+ 
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+                
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
+        authorProfilePicture.layer.borderWidth = 5
+        authorProfilePicture.layer.masksToBounds = false
+        authorProfilePicture.layer.borderColor = UIColor.white.cgColor
+        authorProfilePicture.layer.cornerRadius = authorProfilePicture.frame.height/2
+        authorProfilePicture.isUserInteractionEnabled = true
+        authorProfilePicture.addGestureRecognizer(imageTap)
+        authorProfilePicture.layer.cornerRadius = authorProfilePicture.bounds.height / 2
+        authorProfilePicture.clipsToBounds = true
+
+        
+   }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let user = PFUser.current()
+        
+        authorLabel.text = user!["fullName"] as? String
+        
+        if user?["UserImage"] != nil{
+            let imageFile = user?["UserImage"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            authorProfilePicture.af.setImage(withURL: url)
+        }
+        
+        
+        
+        
+        
+        
+//
+//        let query = PFQuery(className: "User")
+//        query.getFirstObjectInBackground { object, error in
+//            if error == nil{
+//                if let userImage = object {
+//
+//                    let image:UIImage? = self.authorProfilePicture.image
+//
+//                    if image != nil{
+//
+//                        let imageData = image!.pngData()! as NSData
+//                        let file = PFFileObject(name: "someimage.png", data: imageData as Data)
+//                        userImage["profilephoto"] = file
+//                        userImage.saveInBackground(block: {(result,error) -> Void in
+//                            print("Done")
+//
+//                        })
+//                    }
+//                }
+//            }
+//            }
+        
+//        let query = PFQuery(className: "User")
+//        query.includeKey("objetId")
+//        query.limit = 20
+//
+//        query.findObjectsInBackground { (users, error) in
+//            if users != nil {
+//                self.users = users!
+//                self.tableView.reloadData()
+//
+//            }
+//        }
+        
+    }
+    
+    var imagePicker:UIImagePickerController!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 30
     }
@@ -38,112 +132,13 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     
-   
-    
-    
-    @IBOutlet weak var authorProfilePicture: UIImageView!
-    
-    @IBOutlet weak var authorLabel: UILabel!
-    
-    
-    @IBOutlet weak var contactLabel: UILabel!
-    
-    @IBOutlet weak var progressTableView: UITableView!
-    
-    
-    var imagePicker:UIImagePickerController!
-    
-    
-   
-    
-    
-    
-    
 
-    
-    
     //This function is to make the image round + round margin+edit image
  
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        progressTableView.dataSource = self
-        progressTableView.delegate = self
-        
-        
-        
-        
-        //assign background
-        assignbackground()
-        
-        
-    
-        imagePicker = UIImagePickerController()
-        imagePicker.allowsEditing = true
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.delegate = self
-        
-      
-        
-        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
-        authorProfilePicture.layer.borderWidth = 5
-        authorProfilePicture.layer.masksToBounds = false
-        authorProfilePicture.layer.borderColor = UIColor.white.cgColor
-        authorProfilePicture.layer.cornerRadius = authorProfilePicture.frame.height/2
-        authorProfilePicture.isUserInteractionEnabled = true
-        authorProfilePicture.addGestureRecognizer(imageTap)
-        authorProfilePicture.layer.cornerRadius = authorProfilePicture.bounds.height / 2
-        authorProfilePicture.clipsToBounds = true
-        
-    
-        
+
     
 
-        
-        
-        
-        
-   }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        
-         let query = PFQuery(className: "User")
-         query.getFirstObjectInBackground { object, error in
-            if error == nil{
-                 if let userImage = object {
-                 
-                     let image:UIImage? = self.authorProfilePicture.image
-                     
-                     if image != nil{
-                         
-                         let imageData = image!.pngData()! as NSData
-                         let file = PFFileObject(name: "someimage.png", data: imageData as Data)
-                         userImage["profilephoto"] = file
-                         userImage.saveInBackground(block: {(result,error) -> Void in
-                             print("Done")
-             
-                         })
-                     }
-                     }
-                 }
-            }
-        
-//        let query = PFQuery(className: "User")
-//        query.includeKey("objetId")
-//        query.limit = 20
-//
-//        query.findObjectsInBackground { (users, error) in
-//            if users != nil {
-//                self.users = users!
-//                self.tableView.reloadData()
-//
-//            }
-//        }
-        
-    }
     
     
     
@@ -189,16 +184,13 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func saveChangesButton(_ sender: AnyObject) {
 
         
-        
-        
-        
-        let object = PFObject(className: "User")
+        let user = PFUser.current()
         let imageData = authorProfilePicture.image!.pngData()
         let file = PFFileObject( name: "someimage.png", data: imageData!)
-        object["UserImage"] = file
+        user?["UserImage"] = file
         
         
-        object.saveInBackground{ (success, error) in
+        user?.saveInBackground{ (success, error) in
             if success {
                 print("Saved")
                 self.dismiss(animated: true, completion: nil)
