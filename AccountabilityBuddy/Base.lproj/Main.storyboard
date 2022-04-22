@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="A2F-jD-Mey">
             <objects>
-                <viewController id="0FI-yq-x1V" customClass="LoginViewController" customModule="AccountabilityBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="0FI-yq-x1V" customClass="LoginViewController" customModule="AccountabilityBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xhe-aB-S2z">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,7 +311,7 @@
             <objects>
                 <viewController id="oJW-Qw-CL7" customClass="ConnectViewController" customModule="AccountabilityBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ueq-Jk-G0C">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jwj-jl-vXp">
@@ -457,7 +457,7 @@
             <objects>
                 <viewController id="mPz-0P-bdB" customClass="GoalsViewController" customModule="AccountabilityBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DFy-hT-OY5">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5bK-6f-rFh">
@@ -526,7 +526,7 @@
                     <navigationItem key="navigationItem" title="Goals" id="I2l-mQ-e4V">
                         <barButtonItem key="leftBarButtonItem" image="tray.full" catalog="system" id="SGu-Xw-JUU">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="YRs-ZQ-bbb">
-                                <rect key="frame" x="16" y="11" width="67" height="34.333333333333336"/>
+                                <rect key="frame" x="16" y="5" width="67" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="Requests" label="RequestButton"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -629,7 +629,7 @@
                     <tabBarItem key="tabBarItem" title="Connect" image="person.2" catalog="system" id="z7W-ob-e2j"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EBh-l5-Cme">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -648,7 +648,7 @@
                     <tabBarItem key="tabBarItem" title="Goals" image="plus" catalog="system" id="39x-wV-KbZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MGL-SZ-gdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -778,11 +778,11 @@
         <!--Forum-->
         <scene sceneID="T1A-Gj-wDh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eHN-xf-3Md" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ForumNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eHN-xf-3Md" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Forum" image="message" catalog="system" id="mVn-2T-WHc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wey-WP-iTs">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -908,15 +908,32 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-AN-k31">
+                                <rect key="frame" x="16" y="44" width="75.666666666666671" height="31"/>
+                                <color key="backgroundColor" red="0.81445441090000004" green="0.80960518260000003" blue="0.78956141479999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.26448694589999999" green="0.25912315749999998" blue="0.27111084289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" title="Log Out">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLogOut:" destination="fxj-hb-uwT" eventType="touchUpInside" id="CEh-XO-Z1h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="47Q-Q9-2cA"/>
                         <color key="backgroundColor" red="0.75241130030000003" green="0.90118198240000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="47Q-Q9-2cA" firstAttribute="trailing" secondItem="BbK-52-46x" secondAttribute="trailing" constant="140" id="9UU-so-OZv"/>
                             <constraint firstItem="BbK-52-46x" firstAttribute="top" secondItem="dlV-c4-DuO" secondAttribute="bottom" constant="17" id="D8O-NU-Qfl"/>
+                            <constraint firstItem="dlV-c4-DuO" firstAttribute="top" secondItem="RDF-AN-k31" secondAttribute="bottom" constant="18" id="ERG-TU-z3G"/>
                             <constraint firstItem="dlV-c4-DuO" firstAttribute="leading" secondItem="47Q-Q9-2cA" secondAttribute="leading" constant="91" id="FCd-AJ-TyT"/>
                             <constraint firstItem="47Q-Q9-2cA" firstAttribute="trailing" secondItem="dlV-c4-DuO" secondAttribute="trailing" constant="107" id="FG9-Cj-vFM"/>
+                            <constraint firstItem="RDF-AN-k31" firstAttribute="leading" secondItem="47Q-Q9-2cA" secondAttribute="leading" constant="16" id="JRQ-bQ-rQX"/>
                             <constraint firstItem="47Q-Q9-2cA" firstAttribute="trailing" secondItem="dlV-c4-DuO" secondAttribute="trailing" constant="107" id="LM3-uv-6i3"/>
+                            <constraint firstItem="RDF-AN-k31" firstAttribute="top" secondItem="47Q-Q9-2cA" secondAttribute="top" id="NSc-nt-ivq"/>
                             <constraint firstItem="dlV-c4-DuO" firstAttribute="top" secondItem="47Q-Q9-2cA" secondAttribute="top" constant="49" id="atk-NS-53G"/>
                             <constraint firstItem="BbK-52-46x" firstAttribute="top" secondItem="dlV-c4-DuO" secondAttribute="bottom" constant="17" id="cpc-BX-mXL"/>
                             <constraint firstItem="BbK-52-46x" firstAttribute="leading" secondItem="47Q-Q9-2cA" secondAttribute="leading" constant="140" id="lsf-c9-Luy"/>
@@ -953,7 +970,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="lmU-8R-qxg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overCurrentContext" id="EQx-bW-mbA" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overCurrentContext" id="EQx-bW-mbA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="VQi-3D-i7y"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P6L-6q-OTA">
@@ -980,12 +997,10 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="fLB-fM-Ep8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="61U-4O-Ko7">
-                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xDh-pX-R66">
-                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
@@ -1119,7 +1134,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KhV-BL-GnG"/>
+        <segue reference="Pji-FN-vYB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Ilustración_sin_título 1-2" width="1800" height="1200"/>
