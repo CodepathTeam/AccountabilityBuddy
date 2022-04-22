@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Parse
+
 
 class ConnectViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var users = [PFObject]()
     
     
     override func viewDidLoad() {
@@ -22,15 +25,36 @@ class ConnectViewController: UIViewController, UITableViewDataSource, UITableVie
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "User")
+        query.includeKey("objetId")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (users, error) in
+            if users != nil {
+                self.users = users!
+                self.tableView.reloadData()
+                
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
+        print("the method is running")
+        print("\(users)")
         let cell = tableView.dequeueReusableCell(withIdentifier: "ConnectCell") as! ConnectCell
         
-        cell.profileName.text = "John Doe"
+        print(users[indexPath.row]["objectId"] as? String)
+        
+        cell.profileName.text = users[indexPath.row]["objectId"] as? String
         
         return cell
         
