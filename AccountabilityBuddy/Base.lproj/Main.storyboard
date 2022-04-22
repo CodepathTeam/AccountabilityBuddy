@@ -483,14 +483,14 @@
                                 <color key="sectionIndexBackgroundColor" red="0.75241130030000003" green="0.90118198240000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumCategoryCell" id="71a-FL-isH" customClass="ForumCategoryCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="63.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="64.333335876464844"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71a-FL-isH" id="354-8t-emd">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="63.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="64.333335876464844"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvS-4J-MtU" customClass="Cata">
-                                                    <rect key="frame" x="36" y="16" width="318" height="31.666666666666671"/>
+                                                    <rect key="frame" x="36" y="16.000000000000004" width="318" height="32.333333333333343"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -509,7 +509,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumCell" id="svm-h7-kBa" customClass="ForumCell" customModule="AccountabilityBuddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="108.33333396911621" width="390" height="88"/>
+                                        <rect key="frame" x="0.0" y="109.00000190734863" width="390" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="svm-h7-kBa" id="QeV-b4-h5b">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
@@ -643,32 +643,42 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="162"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="vLJ-8M-gS1">
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="vLJ-8M-gS1">
                                                     <rect key="frame" x="220" y="48" width="150" height="4"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" systemColor="systemGreenColor"/>
                                                 </progressView>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Zba-5M-uQo">
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Zba-5M-uQo">
                                                     <rect key="frame" x="220" y="106" width="150" height="4"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.31163349089999998" green="0.0001922522367" blue="1" alpha="0.38747997159999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </progressView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-0K-VHB">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-0K-VHB">
                                                     <rect key="frame" x="42" y="39" width="29" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ky5-cd-RZt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ky5-cd-RZt">
                                                     <rect key="frame" x="35" y="97" width="64" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" systemColor="systemPurpleColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ky5-cd-RZt" firstAttribute="top" secondItem="aqk-0K-VHB" secondAttribute="bottom" constant="37" id="BR8-kS-Ryb"/>
+                                                <constraint firstItem="ky5-cd-RZt" firstAttribute="leading" secondItem="iHl-Gw-g0g" secondAttribute="leadingMargin" constant="15" id="K8Y-y5-eyN"/>
+                                                <constraint firstItem="vLJ-8M-gS1" firstAttribute="leading" secondItem="aqk-0K-VHB" secondAttribute="trailing" constant="149" id="aQj-GB-WW3"/>
+                                                <constraint firstItem="aqk-0K-VHB" firstAttribute="leading" secondItem="iHl-Gw-g0g" secondAttribute="leadingMargin" constant="22" id="ey6-GX-640"/>
+                                                <constraint firstItem="vLJ-8M-gS1" firstAttribute="trailing" secondItem="iHl-Gw-g0g" secondAttribute="trailingMargin" id="h3W-Y8-Zrc"/>
+                                                <constraint firstItem="vLJ-8M-gS1" firstAttribute="top" secondItem="iHl-Gw-g0g" secondAttribute="topMargin" constant="37" id="hK5-W6-kpc"/>
+                                                <constraint firstItem="Zba-5M-uQo" firstAttribute="top" secondItem="vLJ-8M-gS1" secondAttribute="bottom" constant="54" id="ho8-dc-Xe4"/>
+                                                <constraint firstItem="Zba-5M-uQo" firstAttribute="leading" secondItem="ky5-cd-RZt" secondAttribute="trailing" constant="121" id="nJZ-Hd-p8C"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ky5-cd-RZt" secondAttribute="bottom" constant="32" id="o6Y-9Z-H5E"/>
+                                                <constraint firstItem="Zba-5M-uQo" firstAttribute="trailing" secondItem="iHl-Gw-g0g" secondAttribute="trailingMargin" id="tIK-II-cBb"/>
+                                                <constraint firstItem="aqk-0K-VHB" firstAttribute="top" secondItem="iHl-Gw-g0g" secondAttribute="topMargin" constant="28" id="v8M-NJ-JY3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Zba-5M-uQo" secondAttribute="bottom" constant="41" id="z3I-dl-hAL"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="friendLabel" destination="ky5-cd-RZt" id="C84-fu-o1P"/>
