@@ -38,7 +38,6 @@ class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 
             }
         }
-        
         self.tableView.reloadData()
         
     }

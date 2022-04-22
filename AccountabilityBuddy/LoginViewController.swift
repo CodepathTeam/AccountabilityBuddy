@@ -16,22 +16,6 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
-    
-    
-//    @IBAction func onSignUp(_ sender: Any) {
-//        let user = PFUser()
-//        user.username = usernameField.text
-//        user.password = passwordField.text
-//
-//        user.signUpInBackground { (success, error) in
-//            if success {
-//                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-//            } else {
-//                print ("Error: \(String(describing: error?.localizedDescription))")
-//            }
-//        }
-//    }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +25,6 @@ class LoginViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        
-//        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true{
-//            self.performSegue(withIdentifier: "loginSegue", sender: self)
-//        }
-        
     }
     
     @IBAction func onSignIn(_ sender: Any) {

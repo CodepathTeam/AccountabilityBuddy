@@ -22,27 +22,25 @@ class ConnectViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.dataSource = self
         tableView.delegate = self
 
+        
+        self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let query = PFQuery(className: "User")
-        query.includeKey("objetId")
-        query.limit = 20
-        
-        
-        
+        let query = PFQuery(className: "_User")
+
         query.findObjectsInBackground { (users, error) in
             if users != nil {
                 self.users = users!
                 self.tableView.reloadData()
-                
+
             }
-            
-            print("The number of users is \(String(describing: users?.count))")
-                   
+
+            self.tableView.reloadData()
+
         }
     }
     
@@ -52,14 +50,11 @@ class ConnectViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
-        print("the method is running")
-//        print("\(users)")
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "ConnectCell") as! ConnectCell
+
         
-        print(users[indexPath.row]["objectId"] as? String)
-        
-        cell.profileName.text = users[indexPath.row]["objectId"] as? String
+        cell.profileName.text = users[indexPath.row]["fullName"] as? String
         
         return cell
         
