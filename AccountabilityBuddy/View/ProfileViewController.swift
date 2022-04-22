@@ -46,13 +46,14 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var authorLabel: UILabel!
     
-    @IBOutlet weak var biographyLabel: UILabel!
     
     @IBOutlet weak var contactLabel: UILabel!
     
     @IBOutlet weak var progressTableView: UITableView!
     
-
+    
+   
+    
     var imagePicker:UIImagePickerController!
     
     
@@ -123,14 +124,11 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
    }
     
- 
     
-  
-        
 
     
     
-    
+  
     
     
     @objc func openImagePicker(_ sender:Any) {
