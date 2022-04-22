@@ -17,6 +17,10 @@ class progressTableView: UITableViewCell {
     
     @IBOutlet weak var youLabel: UILabel!
     
+    
+    @IBOutlet weak var goalTitleField: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -30,6 +30,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
         cell.youLabel.text = "You"
         cell.friendLabel.text = "Friend"
+        
+        
        
         
         return cell
