@@ -33,6 +33,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         cell.friendLabel.text = "Friend"
         
         
+        
        
         
         return cell
@@ -126,10 +127,12 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
    }
     
     
+    @IBAction func onGoToBar(_ sender: Any) {
+        let vc = UIHostingController(rootView: ProgressBar2SwiftUIView())
+        present(vc, animated: true)
+    }
+    
 
-    
-    
-  
     
     
     @objc func openImagePicker(_ sender:Any) {
@@ -155,6 +158,9 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
        
         }
+    
+    
+    //Can someone see any errors in my save button???
     
     @IBAction func saveChangesButton(_ sender: AnyObject) {
 

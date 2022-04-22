@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import SwiftUI
 
 
 
-
-class progressTableView: UITableViewCell {
+class progressTableView: UITableViewCell{
 
     
     @IBOutlet weak var friendLabel: UILabel!
@@ -25,6 +25,13 @@ class progressTableView: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
+   
+    
+    
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

@@ -637,16 +637,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="162"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="vLJ-8M-gS1">
-                                                    <rect key="frame" x="220" y="48" width="150" height="4"/>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="vLJ-8M-gS1">
+                                                    <rect key="frame" x="165" y="48" width="150" height="4"/>
                                                     <color key="tintColor" systemColor="systemGreenColor"/>
                                                     <gestureRecognizers/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="OLk-xG-KqB" appends="YES" id="YT2-Wf-d3J"/>
-                                                    </connections>
                                                 </progressView>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Zba-5M-uQo">
-                                                    <rect key="frame" x="220" y="106" width="150" height="4"/>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Zba-5M-uQo">
+                                                    <rect key="frame" x="165" y="106" width="150" height="4"/>
                                                     <color key="tintColor" red="0.31163349089999998" green="0.0001922522367" blue="1" alpha="0.38747997159999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </progressView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-0K-VHB">
@@ -668,12 +665,23 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6H-Xr-ZTf">
+                                                    <rect key="frame" x="361" y="0.0" width="29" height="22"/>
+                                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="plus.square.fill.on.square.fill" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="onGoToBar:" destination="fxj-hb-uwT" eventType="touchUpInside" id="arW-LI-R77"/>
+                                                        <segue destination="03B-lf-f6c" kind="presentation" id="1qJ-D0-DFT"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="wmS-Ix-yzC" secondAttribute="trailing" constant="32" id="Azn-Ud-1Rh"/>
                                                 <constraint firstItem="ky5-cd-RZt" firstAttribute="top" secondItem="aqk-0K-VHB" secondAttribute="bottom" constant="37" id="BR8-kS-Ryb"/>
                                                 <constraint firstItem="ky5-cd-RZt" firstAttribute="leading" secondItem="iHl-Gw-g0g" secondAttribute="leadingMargin" constant="15" id="K8Y-y5-eyN"/>
                                                 <constraint firstItem="wmS-Ix-yzC" firstAttribute="top" secondItem="iHl-Gw-g0g" secondAttribute="topMargin" id="PSa-TT-wIM"/>
+                                                <constraint firstItem="p6H-Xr-ZTf" firstAttribute="leading" secondItem="wmS-Ix-yzC" secondAttribute="trailing" constant="23" id="WPd-oh-cd7"/>
                                                 <constraint firstItem="vLJ-8M-gS1" firstAttribute="leading" secondItem="aqk-0K-VHB" secondAttribute="trailing" constant="149" id="aQj-GB-WW3"/>
                                                 <constraint firstItem="aqk-0K-VHB" firstAttribute="leading" secondItem="iHl-Gw-g0g" secondAttribute="leadingMargin" constant="22" id="ey6-GX-640"/>
                                                 <constraint firstItem="vLJ-8M-gS1" firstAttribute="trailing" secondItem="iHl-Gw-g0g" secondAttribute="trailingMargin" id="h3W-Y8-Zrc"/>
@@ -682,6 +690,8 @@
                                                 <constraint firstItem="wmS-Ix-yzC" firstAttribute="leading" secondItem="iHl-Gw-g0g" secondAttribute="leadingMargin" constant="233" id="ktt-qd-EX6"/>
                                                 <constraint firstItem="Zba-5M-uQo" firstAttribute="leading" secondItem="ky5-cd-RZt" secondAttribute="trailing" constant="121" id="nJZ-Hd-p8C"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ky5-cd-RZt" secondAttribute="bottom" constant="32" id="o6Y-9Z-H5E"/>
+                                                <constraint firstAttribute="trailing" secondItem="p6H-Xr-ZTf" secondAttribute="trailing" id="qhy-8G-yS0"/>
+                                                <constraint firstItem="p6H-Xr-ZTf" firstAttribute="top" secondItem="iHl-Gw-g0g" secondAttribute="top" id="qlw-Tm-Ke2"/>
                                                 <constraint firstItem="Zba-5M-uQo" firstAttribute="trailing" secondItem="iHl-Gw-g0g" secondAttribute="trailingMargin" id="tIK-II-cBb"/>
                                                 <constraint firstItem="aqk-0K-VHB" firstAttribute="top" secondItem="iHl-Gw-g0g" secondAttribute="topMargin" constant="28" id="v8M-NJ-JY3"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Zba-5M-uQo" secondAttribute="bottom" constant="41" id="z3I-dl-hAL"/>
@@ -719,11 +729,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pum-Vy-9Td" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="OLk-xG-KqB">
-                    <connections>
-                        <segue destination="03B-lf-f6c" kind="presentation" id="jmF-PK-les"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4375.3846153846152" y="1018.0094786729858"/>
         </scene>
@@ -813,6 +818,7 @@
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="plus.square.fill.on.square.fill" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
