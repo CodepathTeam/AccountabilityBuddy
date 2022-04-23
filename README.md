@@ -35,6 +35,13 @@ The following **required** milestones/issues were completed:
 
 
 
+## Videos Walkthrough Final
+
+![](http://g.recordit.co/bWl1BQNnMF.gif)
+
+![](http://g.recordit.co/gY4NoG9OAi.gif)
+
+![](http://g.recordit.co/HrwTS3xd4D.gif)
 
 
 ## Video Walkthrough Login
@@ -51,10 +58,3 @@ Here's a walkthrough of implemented user stories:
 
 ![](https://i.imgur.com/mDF8nnA.gif)
 
-## Videos Walkthrough Final
-
-![](http://g.recordit.co/bWl1BQNnMF.gif)
-
-![](http://g.recordit.co/gY4NoG9OAi.gif)
-
-![](http://g.recordit.co/HrwTS3xd4D.gif)
