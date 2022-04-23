@@ -1,7 +1,7 @@
 
 # AccountabilityBuddy
 
-## Unit 8: Sprint Planning & Group Milestones
+## Unit 9 and 10: Sprint Planning & Group Milestones
 Sprint Plan in place using GitHub project management flow.
 - [X] Profile page created
 - [X] Forum page created
@@ -27,10 +27,10 @@ The following **required** milestones/issues were completed:
 
  ![865a63a23f176f0cf311b9ee3d366bf6](https://user-images.githubusercontent.com/95549729/163667648-ededb5e1-6341-4d18-b839-9abbf87f88c4.png)
 
-## Sprint planned for next week (Issues created, assigned for Unit 9 Sprint 3 due 4/23/22) 
+## Sprint planned for next week (Issues created, assigned for Unit 9 Sprint 3 due 4/29/22) 
 
-- Update UX interface and standardize style. (Assigned to Maria)
-- Mock Schenarios and test run (assigned to Esse)
+- Video rehearsal for final presentation. (Assigned to Maria)
+- More user experience Schenarios and test runs (assigned to Esse)
 - Builds for update/ delete / grouping of goals for each user.(Assigned to Yisake) 
 
 
