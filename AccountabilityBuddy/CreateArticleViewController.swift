@@ -21,19 +21,6 @@ class CreateArticleViewController: UIViewController {
     }
     
     
-    func assignbackground(){
-            let background = UIImage(named: "background.png")
-
-            var imageView : UIImageView!
-            imageView = UIImageView(frame: view.bounds)
-        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
-            imageView.clipsToBounds = true
-            imageView.image = background
-            imageView.center = view.center
-            view.addSubview(imageView)
-            self.view.sendSubviewToBack(imageView)
-        }
-    
     
     @IBAction func onCreateArticle(_ sender: Any) {
         
@@ -42,8 +29,32 @@ class CreateArticleViewController: UIViewController {
         forum["Title"] = articleSection.text
         forum["Content"] = articleContent.text
         
-        self.dismiss(animated: true, completion: nil)
+        forum.saveInBackground{ (success, error) in
+            if success {
+                print("Saved")
+                self.dismiss(animated: true, completion: nil)
+            }else{
+                print("error")
+                
+                
+            }
+        
+        }
     }
+    
+    
+    func assignbackground(){
+            let background = UIImage(named: "background.png")
+
+            var imageView : UIImageView!
+            imageView = UIImageView(frame: view.bounds)
+            imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+            imageView.clipsToBounds = true
+            imageView.image = background
+            imageView.center = view.center
+            view.addSubview(imageView)
+            self.view.sendSubviewToBack(imageView)
+        }
     
 
     /*

@@ -135,17 +135,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
 
     //This function is to make the image round + round margin+edit image
  
-    
 
-    
-
-    
-    
-    
-    
-    
-    
-    
     @IBAction func onGoToBar(_ sender: Any) {
         let vc = UIHostingController(rootView: ProgressBar2SwiftUIView())
         present(vc, animated: true)
