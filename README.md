@@ -11,7 +11,7 @@ Sprint Plan in place using GitHub project management flow.
 - [X] Completed user stories checked-off in README 
 - [X] Gifs created to show build progress and added to README (GIF walkthough below)
 
-Time spent: **12** hours spent in total
+Time spent: **1** month spent in total
 
 ## User Stories
 
@@ -23,7 +23,7 @@ The following **required** milestones/issues were completed:
 - [X] User can create/add a goal. 
 - [X] A basic skeleton of our entire app.
 - [X] Connect page
-- [X] Settings page
+
 
  ![865a63a23f176f0cf311b9ee3d366bf6](https://user-images.githubusercontent.com/95549729/163667648-ededb5e1-6341-4d18-b839-9abbf87f88c4.png)
 
@@ -32,7 +32,7 @@ The following **required** milestones/issues were completed:
 - Update UX interface and standardize style. (Assigned to Maria)
 - Mock Schenarios and test run (assigned to Esse)
 - Builds for update/ delete / grouping of goals for each user.(Assigned to Yisake) 
-- Settings [Accesibility, Notification, General, etc.] (Assigned to Emmanuel)
+
 
 
 
@@ -50,3 +50,7 @@ Here's a walkthrough of implemented user stories:
 ## Video Walkthrough to add a goal by us
 
 ![](https://i.imgur.com/mDF8nnA.gif)
+
+## Videos Walkthrough Final
+
+![](http://g.recordit.co/bWl1BQNnMF.gif)
