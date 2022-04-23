@@ -54,3 +54,5 @@ Here's a walkthrough of implemented user stories:
 ## Videos Walkthrough Final
 
 ![](http://g.recordit.co/bWl1BQNnMF.gif)
+
+![](http://g.recordit.co/gY4NoG9OAi.gif)
