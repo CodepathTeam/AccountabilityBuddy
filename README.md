@@ -56,3 +56,5 @@ Here's a walkthrough of implemented user stories:
 ![](http://g.recordit.co/bWl1BQNnMF.gif)
 
 ![](http://g.recordit.co/gY4NoG9OAi.gif)
+
+![](http://g.recordit.co/HrwTS3xd4D.gif)
